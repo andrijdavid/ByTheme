@@ -1,0 +1,23 @@
+.nav {
+  .menu-item{
+    &:hover{
+      transform: scale(1.04);
+      a {
+        font-weight: 500;
+        &:hover{
+          transform: scale(1.04);
+        }
+      }
+      border-bottom: 2px #fffde3;
+    }
+  }
+}
+
+.img:hover{
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+:focus {
+  color: #333;
+  outline: #ccc solid 1px;
+}

@@ -1,0 +1,187 @@
+.main {
+    width: auto;
+    height: auto;
+}
+
+.gal-img {
+    /*
+    position: relative;*/
+    width: 300px !important;
+    /*
+      max-width: 50% !important;
+      */
+    height: auto;
+}
+
+.gal-cap {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    /*adding: 20px;*/
+    color: #fff;
+}
+
+.gal-effect{
+    background: transparent linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) 0px, rgba(0, 0, 0, 0.6) 33%, rgba(0, 0, 0, 0.5) 66%, transparent 100%, transparent) repeat scroll 0px 0px;
+}
+
+figure {
+    /*
+     * margin: 0px;
+     * padding: 0px;
+     */
+}
+
+.gal > figure {
+    /*max-width: 100% !important;
+    min-width: 33.333% !important;*/
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+.gal > figure > a > img {
+    display: block;
+    max-width: 100%;
+}
+.gal > figure > a{
+    display: block;
+    max-width: 100%;
+}
+
+.gal-item{
+    float: left;
+}
+
+.gal > figure > figcaption > span {
+    float: right;
+}
+.gal > figure > figcaption {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    color: white;
+    transition: all 0.5s cubic-bezier(0,0,0.25,1);
+
+}
+
+.gal > figure > figcaption > h4 ::first-letter{
+    text-transform: uppercase;
+}
+.gal:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.gal-item--gigante {
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px){
+    .gal-sizer , .gal-item{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .gal-sizer , .gal-item{
+        width: 33.333%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .gal-sizer, .gal-item{
+        width: 50%;
+    }
+}
+
+.gal-sizer, .gal-item{
+    width: 100%;
+}
+
+/* Mobile first queries */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .gal-sizer, .gal-item {
+        width: 50%;
+    }
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+    .gal-sizer, .gal-item {
+        width: 50%;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .gal-sizer, .gal-item{
+        width: 50%;
+    }
+}
+
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .gal-sizer, .gal-item{
+        width: 33.333%;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .gal-sizer , .gal-item{
+        width: 25%;
+    }
+}
+
+
+
+.gal > figure:hover  figcaption {
+    bottom: 0;
+    padding: 5px;
+}
+.gal > figure:hover a  img {
+    /*border: 12px solid rgb(46, 52, 68);*/
+    transform: translateZ(20);
+    transition: transform 0.2s ease 0s, color 0.2s ease 0s;
+}
+
+.gal-card-tile{
+    /*display: flex;*/
+}
+
+.gal-item {
+    background-color: #2E3444;
+    color: #D3EEE2;
+    cursor: pointer;
+    border-color: gray;
+}
+
+.gal-wrapper{
+    clear: both;
+}
+
+.gal {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-caption{
+    position: relative;
+    top: -300px;
+    background-color: #FAFAFA;
+    width: 1000px;
+    height: auto;
+    padding: 30px 15px!important;
+    margin: auto;
+}
+

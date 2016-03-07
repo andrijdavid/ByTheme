@@ -1,0 +1,340 @@
+$i: 60;
+
+@while $i > 0 {
+
+  .mr-#{$i} {
+    margin-right: 1px * $i;
+  }
+
+  .ml-#{$i} {
+    margin-left: 1px * $i;
+  }
+
+  .mt-#{$i} {
+    margin-top: 1px * $i;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: 1px * $i;
+  }
+
+  .pr-#{$i} {
+    padding-right: 1px * $i;
+  }
+
+  .pl-#{$i} {
+    padding-left: 1px * $i !important;
+  }
+
+  .pt-#{$i} {
+    padding-top: 1px * $i !important;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: 1px * $i !important;
+  }
+
+  .p-#{$i}{
+    padding: 1px * $i !important;
+  }
+
+  .m-#{$i}{
+    margin: 1px * $i !important;
+  }
+
+  .b-#{$i} {
+    bottom: 1px * $i !important;
+  }
+
+  .l-#{$i} {
+    left: 1px * $i !important;
+  }
+
+  .r-#{$i} {
+    right: 1px * $i !important;
+  }
+
+  .t-#{$i} {
+    top : 1px * $i !important;
+  }
+
+  $i: $i - 5;
+}
+
+$direction: 'left', 'right', 'top', 'bottom';
+
+@each $d in $direction {
+  .no-margin-#{$d} {
+    margin-#{$d}: 0 !important;
+  }
+
+  .no-padding-#{$d} {
+    padding-#{$d}: 0 !important;
+  }
+
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-top {
+  top: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.titanic {
+  float: none !important;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.scrollable {
+  overflow: hidden;
+}
+
+.full-height {
+  height: 100% !important;
+}
+
+.fit {
+  max-width: 100%;
+}
+
+.half-width {
+  width: 50%
+}
+
+.full-width {
+  width: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.eff {
+  background: transparent linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9) 0px, rgba(0, 0, 0, 0.6) 33%, rgba(0, 0, 0, 0.5) 66%, transparent 100%, transparent) repeat scroll 0px 0px;
+  width: 100% !important;
+}
+
+.transparent-overlay:hover:before {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.transparent-overlay:hover:after {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.transparent-overlay:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  transition: all 0.6s ease-in-out;
+}
+
+.transparent-overlay:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-color: transparent;
+  transition: all 0.6s ease-in-out;
+}
+
+.inherit {
+  color: inherit !important;
+}
+
+.container-fluid {
+  width: 100% !important;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.static {
+  position: static;
+}
+
+.zindex-1 {
+  z-index: 1;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+
+.zindex-3 {
+  z-index: 3;
+}
+
+.pin-top-right {
+  top: 0;
+  right: 0;
+}
+
+.pin-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.align-bottom {
+  vertical-align: bottom;
+}
+
+.align-middle {
+  vertical-align: middle;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.break-word {
+  word-wrap: break-word;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+/*
+ * Image filter
+ */
+
+.blur {
+  filter: blur(4px);
+}
+
+.brightness {
+  filter: brightness(0.30);
+}
+$i: 160;
+
+@while $i > 0 {
+
+  .contrast-#{$i} {
+    filter: contrast($i * 1%);
+  }
+
+  .grayscale-#{$i} {
+    filter: grayscale($i * 1%);
+  }
+
+  .huerotate-#{$i} {
+    filter: hue-rotate($i * 1deg);
+  }
+
+  .invert-#{$i} {
+    filter: invert($i * 1%);
+  }
+
+
+  .opacity-#{$i} {
+    filter: opacity($i * 1%);
+  }
+
+  .sepia-#{$i} {
+    filter: sepia($i * 1%);
+  }
+   $i: $i - 5;
+}
+
+.saturate {
+  filter: saturate(7);
+}
+
+
+.shadow {
+  filter: drop-shadow(8px 8px 10px green);
+}
+
+.no-shadow {
+  box-shadow: none;
+}

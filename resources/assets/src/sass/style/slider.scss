@@ -1,0 +1,39 @@
+.text-float{
+  background: rgba(247, 245, 242, 0.9);
+  color: #222222;
+  position: absolute;
+  padding: 10px !important;
+  bottom: 10px !important;
+}
+
+.sliders{
+  position: relative;
+  height: 600px;
+
+  img{
+    max-height: 600px;
+    width: 100%;
+  }
+}
+
+.silde-description{
+  position: absolute;
+  right: 150px;
+  margin-top: 20px;
+}
+
+.home-slider-caption{
+  h3 {
+    font-size: 2em !important;
+    font-weight: inherit;
+    a {
+       &:hover{
+         transform: scale(1.04);
+       }
+    }
+  }
+  p {
+    font-size: 1em !important;
+    font-weight: inherit;
+  }
+}

@@ -1,0 +1,218 @@
+/* Widget Styling
+------------------------------------------------------------ */
+
+// default widget styles
+.widget {
+  @extend .clearfix;
+  background-color: $widgetBgColor;
+  //border: 1px solid $widgetBorderColor;
+  color: $widgetFontColor;
+  padding: $padding-large-vertical $padding-large-horizontal;
+  border-radius: $border-radius-large;
+  margin-bottom: ($line-height-computed * 1.5);
+  ul {
+    padding-left: 0;
+
+    ul {
+      padding-left: $padding-large-horizontal;
+    }
+  }
+
+  li {
+    list-style-type: none;
+    word-wrap: break-word;
+    padding-bottom: $padding-large-vertical;
+
+  }
+
+  table {
+    @extend .table;
+    @extend .table-condensed;
+  }
+
+}
+
+.widget_search {
+  .search-query {
+    margin-bottom: 10px;
+  }
+}
+
+// includes ID in selector for specificity
+.widget_calendar #wp-calendar {
+  th, td {
+    padding: 0;
+  }
+}
+
+//////////////////////////////////////
+
+/* ## Search Form
+--------------------------------------------- */
+
+.search-form {
+  overflow: hidden;
+}
+
+.site-header .search-form {
+  float: right;
+  margin-top: 12px;
+}
+
+.entry-content .search-form,
+.site-header .search-form {
+  width: 50%;
+}
+
+.search input[type="submit"],
+.widget_search input[type="submit"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* ## Titles
+--------------------------------------------- */
+
+.archive-title {
+  font-size: 20px;
+  font-size: 2rem;
+}
+
+.entry-title {
+  font-size: 36px;
+  font-size: 3.6rem;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+  color: #333;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+  color: #c3251d;
+}
+
+.widget-title {
+  font-size: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+/* # Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.widget {
+  word-wrap: break-word;
+}
+
+.widget ol > li {
+  list-style-position: inside;
+  list-style-type: decimal;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+
+.widget li li {
+  border: 0;
+  margin: 0 0 0 30px;
+  padding: 0;
+}
+
+.widget_calendar table {
+  width: 100%;
+}
+
+.widget_calendar td,
+.widget_calendar th {
+  text-align: center;
+}
+
+/* ## Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+  float: right;
+  text-align: right;
+  width: 800px;
+}
+
+/* # Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+  font-size: 16px;
+  font-size: 1.6rem;
+
+  .widget {
+    background-color: #eeeeee !important;
+
+    .widget-wrap {
+      .widgettitle {
+        color: #777;
+      }
+      a {
+        color: #196D61;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.sidebar li {
+  border-bottom: 1px dotted #ddd;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.sidebar p:last-child,
+.sidebar ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar .widget {
+  background-color: #fff;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+.site-footer {
+  .widget {
+    .widget-wrap {
+      .widgettitle {
+        color: #777;
+      }
+      a {
+        color: #196D61;
+        font-weight: bold;
+      }
+
+      td{
+        color: #fff;
+        font-weight: bold;
+      }
+      th{
+        color: #757777;
+        font-weight: bold;
+      }
+      h3{
+        color: #757777;
+        font-weight: bold;
+      }
+
+      ul {
+        li {
+          a {
+            color: #fff;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

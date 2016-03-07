@@ -1,0 +1,38 @@
+{
+  "name": "ByTheme",
+  "version": "0.0.1",
+  "authors": [
+    "andrijdavid@hotmail.com <andrijdavid@gmail.com>"
+  ],
+  "description": "MyTheme wordpress Theme",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ace": "ajaxorg/ace#~1.2.3",
+    "ace-builds": "~1.2.3",
+    "animate.css": "~3.5.1",
+    "eventie": "^1.0.6",
+    "flickity": "~1.1.2",
+    "font-awesome": "fontawesome#~4.5.0",
+    "imagesloaded": "~4.1.0",
+    "jquery": "~2.2.0",
+    "masonry": "~4.0.0",
+    "photoswipe": "~4.1.1",
+    "wow": "wowjs#~1.1.2",
+    "Profound-Grid": "*",
+    "susy": "^2.2.12",
+    "bootstrap-sass": "^3.3.6",
+    "material-design-color-palette": "^1.1.0"
+  },
+  "resolutions": {
+    "fizzy-ui-utils": "~2.0.0",
+    "matches-selector": "~2.0.0"
+  }
+}

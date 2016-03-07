@@ -1,0 +1,306 @@
+# Copyright (C) 2016 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version:  \n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/resources\n"
+"POT-Creation-Date: 2016-03-05 07:32:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin/application.php:7
+msgid "Layouts"
+msgstr ""
+
+#: admin/application.php:10 admin/application.php:28
+msgid "Right Sidebar"
+msgstr ""
+
+#: admin/application.php:11 admin/application.php:29
+msgid "Left Sidebar"
+msgstr ""
+
+#: admin/application.php:12 admin/application.php:30
+msgid "Full width"
+msgstr ""
+
+#: admin/application.php:15
+msgid "Choose a layout:"
+msgstr ""
+
+#: admin/application.php:33
+msgid "Choose a loop type:"
+msgstr ""
+
+#: admin/gallery.php:3
+msgid "Gallery Categories"
+msgstr ""
+
+#: admin/gallery.php:3
+msgid "Gallery Category"
+msgstr ""
+
+#: admin/gallery.php:11
+msgid "Gallery Tags"
+msgstr ""
+
+#: admin/gallery.php:11
+msgid "Gallery Tag"
+msgstr ""
+
+#: admin/gallery.php:19
+msgid "Galleries"
+msgstr ""
+
+#: admin/gallery.php:19
+msgid "Gallery"
+msgstr ""
+
+#: admin/gallery.php:28 admin/product.php:29
+msgid "Add"
+msgstr ""
+
+#: admin/options.php:6
+msgid "General"
+msgstr ""
+
+#: admin/options.php:8
+msgid "Society Information"
+msgstr ""
+
+#: admin/options.php:9
+msgid "Social Network"
+msgstr ""
+
+#: admin/options.php:10
+msgid "Code"
+msgstr ""
+
+#: admin/options.php:11
+msgid "Analytics"
+msgstr ""
+
+#: admin/options.php:12
+msgid "Default Images"
+msgstr ""
+
+#: admin/options.php:17 admin/options.php:41
+msgid "Name"
+msgstr ""
+
+#: admin/options.php:20
+msgid "Title separator"
+msgstr ""
+
+#: admin/options.php:26
+msgid "Right"
+msgstr ""
+
+#: admin/options.php:27
+msgid "Left"
+msgstr ""
+
+#: admin/options.php:30
+msgid "Title separator emplacement"
+msgstr ""
+
+#: admin/options.php:36
+msgid "Javascript"
+msgstr ""
+
+#: admin/options.php:37
+msgid "Style"
+msgstr ""
+
+#: admin/options.php:42
+msgid "Biography"
+msgstr ""
+
+#: admin/options.php:43
+msgid "Address"
+msgstr ""
+
+#: admin/options.php:44 admin/options.php:45 admin/options.php:46
+#: admin/options.php:47
+msgid "Phone Number"
+msgstr ""
+
+#: admin/options.php:66
+msgid "Favicon"
+msgstr ""
+
+#: admin/options.php:67
+msgid "Logo"
+msgstr ""
+
+#: admin/options.php:68
+msgid "Default Slider"
+msgstr ""
+
+#: admin/product.php:3
+msgid "Product Categories"
+msgstr ""
+
+#: admin/product.php:3
+msgid "Product Category"
+msgstr ""
+
+#: admin/product.php:11
+msgid "Product Tags"
+msgstr ""
+
+#: admin/product.php:11
+msgid "Product Tag"
+msgstr ""
+
+#: admin/product.php:20
+msgid "Products"
+msgstr ""
+
+#: admin/product.php:20
+msgid "Product"
+msgstr ""
+
+#: config/menus.config.php:12
+msgid "Header navigation"
+msgstr ""
+
+#: config/menus.config.php:13
+msgid "TopNav navigation"
+msgstr ""
+
+#: config/menus.config.php:14
+msgid "Footer navigation"
+msgstr ""
+
+#: config/sidebars.config.php:12
+msgid "Footer first sidebar"
+msgstr ""
+
+#: config/sidebars.config.php:14
+msgid "Area of first sidebar on footer"
+msgstr ""
+
+#: config/sidebars.config.php:21
+msgid "Footer second sidebar"
+msgstr ""
+
+#: config/sidebars.config.php:23
+msgid "Area of second sidebar on footer"
+msgstr ""
+
+#: config/sidebars.config.php:30
+msgid "Footer third sidebar"
+msgstr ""
+
+#: config/sidebars.config.php:32
+msgid "Area of third sidebar on footer"
+msgstr ""
+
+#: config/sidebars.config.php:39
+msgid "Single post sidebar"
+msgstr ""
+
+#: config/sidebars.config.php:41 config/sidebars.config.php:50
+msgid "Area of sidebar on single post"
+msgstr ""
+
+#: config/sidebars.config.php:48
+msgid "Single product sidebar"
+msgstr ""
+
+#: config/sidebars.config.php:57
+msgid "Single gallery sidebar"
+msgstr ""
+
+#: config/sidebars.config.php:59
+msgid "Area of sidebar on gallery"
+msgstr ""
+
+#: views/error/404.scout.php:6
+msgid "We couldn't find the page.."
+msgstr ""
+
+#: views/error/404.scout.php:9
+msgid ""
+"Sorry, but the page you are looking for was either not found or does not "
+"exist."
+msgstr ""
+
+#: views/error/404.scout.php:10
+msgid ""
+"Try refreshing the page or click the button below to go back to the Homepage."
+msgstr ""
+
+#: views/error/404.scout.php:14
+msgid "Go back to Homepage"
+msgstr ""
+
+#: views/partials/category.scout.php:7
+msgid "Categories"
+msgstr ""
+
+#: views/partials/header/search.scout.php:18 views/widgets/search.scout.php:7
+#: views/widgets/search.scout.php:12
+msgid "Search"
+msgstr ""
+
+#: views/partials/home/slider.scout.php:26
+#: views/partials/product/single.scout.php:28
+msgid "Previous"
+msgstr ""
+
+#: views/partials/home/slider.scout.php:30
+#: views/partials/product/single.scout.php:32
+msgid "Next"
+msgstr ""
+
+#: views/partials/posts/single.scout.php:38
+msgid "In"
+msgstr ""
+
+#: views/partials/recent.scout.php:13
+#: views/partials/unique/unique4.scout.php:29
+msgid "Read More "
+msgstr ""
+
+#: views/partials/tag.scout.php:7
+msgid "Tags"
+msgstr ""
+
+#: views/partials/unique/unique1.scout.php:17
+#: views/partials/unique/unique3.scout.php:15
+msgid "Published at "
+msgstr ""
+
+#: views/partials/unique/unique4.scout.php:20
+msgid "Share Facebook"
+msgstr ""
+
+#: views/partials/unique/unique4.scout.php:22
+msgid "Share Twitter"
+msgstr ""
+
+#: views/partials/unique/unique4.scout.php:24
+msgid "Share Google"
+msgstr ""
+
+#: views/widgets/archive.scout.php:5
+msgid "ARCHIVES"
+msgstr ""
+
+#: views/widgets/category.scout.php:5
+msgid "CATEGORIES"
+msgstr ""
+
+#: views/widgets/page.scout.php:5
+msgid "PAGES"
+msgstr ""
+
+#: views/widgets/recentpost.scout.php:5
+msgid "RECENT POSTS"
+msgstr ""
