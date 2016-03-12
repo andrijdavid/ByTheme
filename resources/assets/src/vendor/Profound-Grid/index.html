@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>Profound Grid | A grid system for fixed and fluid layouts</title>
+		
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+		<meta name="title" content="Profound Grid | A grid system for fixed and fluid layouts" />
+		<meta name="description" content="Profound Grid is a responsive grid system for fixed and fluid layouts. Built in SCSS, it gives you flexibility and full control. Profound Grid uses negative margins to calculate columns, so unlike with other grid systems, fluid layouts will look exactly the same in every browser." />
+		<meta name="keywords" content="CSS, grid, grid system, Profound, fixed, layout, fluid, responsive, adaptive, design" />
+		
+		<meta property="og:url" content="http://www.profoundgrid.com"/>
+		<meta property="og:title" content="Profound Grid | A grid system for fixed and fluid layouts"/> 
+		<meta property="og:type" content="website"/> 
+		<meta property="og:image" content="http://www.profoundgrid.com/img/facebook.jpg"/> 
+		<meta property="og:site_name" content="Profound Grid"/> 
+		<meta property="og:description" content="Profound Grid is a responsive grid system for fixed and fluid layouts. Built in SCSS, it gives you flexibility and full control."/>
+		<meta name="viewport" content="initial-scale=1,minimum-scale=1,width=device-width">
+
+	    <!-- Javascript -->
+	    <script type="text/javascript" src="/js/jquery-1.8.3.min.js"></script>
+
+	    <!-- Stylesheets -->
+	    <link href='http://fonts.googleapis.com/css?family=Raleway:500,900,200' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/examples/index.css" type="text/css" media="screen" />
+
+
+
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="/js/html5shiv.js"></script>
+			<script type="text/javascript" src="/js/selectivizr.js"></script>
+			<script type="text/javascript" src="/js/respond.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<nav>
+			<div class="center">
+				<ul>
+					<li>
+						<a href='#' title="Show Grid" id="gridButton" onclick="return false;">Show Grid</a>
+					</li>
+					<li>
+						<a href="/" id="logo"><img src="/img/logo_top.png" /></a>
+					</li>
+					<li>
+						<a id="navDownload" title="Download .Zip File" href='https://github.com/artofrawr/profoundgrid/archive/master.zip'>Download .Zip File</a>
+						<a id="navGithub" title="Fork On Github" href='https://github.com/artofrawr/profoundgrid/'>Fork On Github</a>
+						<a id="navFacebook" title="Share On Facebook" href='http://www.facebook.com/sharer.php?u=http://www.profoundgrid.com'>Share on Facebook</a>
+						<a id="navTwitter" title="Share On Twitter" href='http://twitter.com/?status=http%3A%2F%2Fwww.profoundgrid.com+by+%40weareprofound'>Share on Twitter</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<header>
+			<h1><a href="http://www.profoundgrid.com/"><span>PROFOUND</span>GRID</a></h1>
+			<div class="seperator"></div>
+			<h2>A responsive grid system for fixed and fluid layouts. Built in SCSS, it gives you flexibility and full control.</h2>
+
+			<section>
+				<ul>
+					<li>
+						<img src="/img/feature_responsive.png" />
+						<h3>Responsive</h3>
+						<p>Make the grid fluid or fixed and add per-media layouts as needed. Change the column and gutter widths and remove or add columns as needed.</p>
+					</li>
+					<li>
+						<img src="/img/feature_semantic.png" />
+						<h3>Semantic</h3>
+						<p>The grid keeps your markup semantic and works without any "grid_x" classes. Unless you want to use them, in which case they are included.</p>
+					</li>
+					<li>
+						<img src="/img/feature_customize.png" />
+						<h3>Precise</h3>
+						<p>Profound Grid uses negative margins to calculate columns. Unlike with other grid systems, fluid layouts will look exactly the same in every browser.</p>
+					</li>
+				</ul>
+			</section>
+		</header>
+
+		<!-- Features -->	
+		
+
+		<article id="examples">
+			<h3>EXAMPLES</h3>
+			<ul>
+				<li>
+					<a href="examples/fixed.html">
+						<img src="/img/example_grid_fixed.png" />
+						<h4>Fixed</h4>
+					</a>
+					<span>Standard fixed grid layout. Define amount of columns, column width and gutter width.</span>
+				</li>
+				<li>
+					<a href="examples/fixedresponsive.html">
+						<img src="/img/example_grid_fixedresp.png" />
+						<h4>Responsive Fixed</h4>
+					</a>
+					<span>Fixed grid layout, that adapts to the available display width.</span>
+				</li>
+				<li>
+					<a href="examples/fluid.html">
+						<img src="/img/example_grid_fluid.png" />
+						<h4>Fluid</h4>
+					</a>
+					<span>A fluid grid that uses percentages of the total available width for the columns.</span>
+				</li>
+				<li>
+					<a href="examples/fluidmaxwidth.html">
+						<img src="/img/example_grid_maxw.png" />
+						<h4>Max-Width Fluid</h4>
+					</a>
+					<span>A fluid grid, that has a maximum total width.</span>
+				</li>
+				<li>
+					<a href="examples/fluidresponsive.html">
+						<img src="/img/example_grid_fluidresp.png" />
+						<h4>Responsive Fluid</h4>
+					</a>
+					<span>A fluid grid that changes its layout at certain break points</span>
+				</li>
+				<li>
+					<a href="examples/multiple.html">
+						<img src="/img/example_grid_multiple.png" />
+						<h4>Multiple Grids</h4>
+					</a>
+					<span>Different grid layouts on the same page.</span>
+				</li>
+				<li>
+					<a href="examples/nested.html">
+						<img src="/img/example_grid_nested.png" />
+						<h4>Nested Grids</h4>
+					</a>
+					<span>We heard you like grids, so we put a grid in your grid in your grid.</span>
+				</li>
+				<li>
+					<a href="examples/pushpull.html">
+						<img src="/img/example_grid_push.png" />
+						<h4>Push/Pull</h4>
+					</a>
+					<span>Add empty colums into the grid, or swap the order of columns from how they appear in the source.</span>
+				</li>
+			</ul>
+		</article>
+
+		<article id="downloads">
+			<h3 class="seperator">DOWNLOADS</h3>
+			<ul>
+				<li><a href="https://github.com/artofrawr/profoundgrid/archive/master.zip">Download .Zip File</a></li>
+				<li><a href="https://github.com/artofrawr/profoundgrid/">Source on Github</a></li>
+			</ul>
+		</article>
+
+		<article id="reference">
+			<h3 class="seperator">REFERENCE</h3>
+			<ul>
+				<li>
+					<h4>Total Width</h4>
+					<pre>$total_width: 960px; <span>// px or %</span></pre>
+					<span>Defines the overall width of the grid. If set to 100% the grid becomes fluid.</span>
+				</li>
+				<li>
+					<h4>Total Columns</h4>
+					<pre>$total_columns: 12; <span>// number</span></pre>
+					<span>Defines the amount of columns in your grid.</span>
+				</li>
+				<li>
+					<h4>Gutter Width</h4>
+					<pre>$gutter_width: 1%;  <span>// px or %</span></pre>
+					<span>Sets the grid's gutter width. This can be % or px and will automatically determine the width of each column.</span>
+				</li>
+				<li>
+					<h4>Container Margin</h4>
+					<pre>$container_margin: 1%;  <span>// px or %</span></pre>
+					<span>Determines the margin on the left and right side of the grid. Example: If this is set to 0 for a 100% fluid grid, the grid will touch the sides of the browser.</span>
+				</li>
+				<li>
+					<h4>Helper Classes</h4>
+					<pre>$class_container: 'grid';<br/>$class_column: 'col';<br/>$class_push: 'push';</pre>
+					<span>Allows you to change the name of the helper classes, that you can use to build your grid through markup.</span>
+				</li>
+				<li>
+					<h4>Mixin: Helper Classes</h4>
+					<pre><span>//helper_classes()</span><br/>@include helper_classes();</pre>
+					<span>Builds helper classes that can used to build the grid in the markup. Default classnames are: .container, .col1 - .colx, .push0 - .pushx</span>
+				</li>
+				<li>
+					<h4>Mixin: Container</h4>
+					<pre><span>//container()</span><br/>.grid{ @include container(); }</pre>
+					<span>Establish the outer grid-containing element.</span>
+				</li>
+				<li>
+					<h4>Mixin: Column</h4>
+					<pre><span>//column($width, $padding:null)</span><br/>.col{ @include column(3); }</pre>
+					<span>Creates a column of the specified width. The optional argument sets the columns position.</span>
+				</li>
+				<li>
+					<h4>Mixin: Push</h4>
+					<pre><span>//push($_column_index)</span><br/>.col{ @include push(1); }</pre>
+					<span>Sets the position of a "column()" element. The argument is a 0-based index, so the above example would align the element the 2nd colum of the grid.</span>
+				</li>
+				<li>
+					<h4>Mixin: Positions</h4>
+					<pre><span>//positions($selector, $width)</span><br/>@include positions('.grid', 3);</pre>
+					<span>Creates CSS Styles to automatically position every element in a grid of equal sized elements.</span>
+				</li>
+				<li>
+					<h4>Mixin: Positions Legacy</h4>
+					<pre><span>//pos_legacy($s, $w, $count)</span><br/>@include pos_legacy('.grd', 3, 12);</pre>
+					<span>Same as the "positions()" mixin, with an additional parameter for the total amount of columns/elements supported. The difference lies in the CSS output, that avoids the use of the nth-child() selector which isn't natively supported in older browsers.  </span>
+				</li>
+			</ul>
+		</article>
+
+		
+		<footer>
+			<div class="center">
+				<h3>BUILT BY</h3>
+				<section id="company">
+					<a href="http://www.weareprofound.com">PROFOUND</a>
+				</section>
+				<section id="meta">
+					<div>Copyright &copy; 2009-2012 Profound Creative Studio LLC. All rights reserved. </div>
+					<div>
+						<a href="http://www.facebook.com/pages/Profound/174209019285677">Profound on Facebook</a>
+						<a href="https://twitter.com/weareprofound">Profound on Twitter</a>
+					</div>	
+				</section>
+			</div>
+		</footer>
+
+		<script type="text/javascript">
+
+			// TOGGLE GRID
+			$('#gridButton').click(function(){
+				if($('#grid').length == 0) {
+					var height = $('body').height();
+					var html = '<article id="grid"><div class="overlay"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></article>';
+					$('body').prepend(html);
+					$('#grid div').css('height', height);
+				}else{
+					$('#grid').remove();
+				}
+			});
+
+			$(window).resize(function() {
+				if($('#grid').length > 0) {
+					var height = $('body').height();
+					$('#grid div').css('height', height);
+				}
+			});
+
+			// CHANGE GRID OVERLAY BEHAVIOUR FOR BROWSERS
+			// THAT DONT SUPPORT "pointer-events: none;" CSS
+			if ($.browser.msie || $.browser.opera) {
+			  $('#grid').live('click', function(){
+			  	$('#grid').remove();
+			  });
+			}
+
+			
+
+			// TOOLTIP
+			var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent);
+			$('nav a').hover(function(){
+				if (isMobile == false){
+					var pos = $(this).offset();
+	                var title = $(this).attr('title');
+	                if ($.trim(title) == ''){
+	                	return;
+	                }
+	                $(this).data('tipText', title).removeAttr('title');
+	                if($('.tooltip').length == 0) {
+	                	var html = '<p class="tooltip"></p>';
+	                	$('body').append(html);
+	                }
+	                $('.tooltip').html('<div class="arrow"></div><div>'+title+'</div>');
+	                $('.tooltip').css('top', pos.top+55).css('left', pos.left+25);
+	                var width = $('.tooltip').outerWidth();
+	                $('.tooltip').css('margin-left', 0-width*0.5);
+	                $('.tooltip').addClass('show');
+				}
+	        }, function() {
+	        	if (isMobile == false){
+	            	$('.tooltip').removeClass('show');
+	            	$(this).attr('title', $(this).data('tipText'));
+	            }
+	        });
+
+			
+		</script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-9052680-6']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+	</body>
+
+</html>

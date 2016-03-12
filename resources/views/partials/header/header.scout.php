@@ -6,8 +6,6 @@
                 <span class="sr-only">Toggle navigation</span>
                 <span class="glyphicon glyphicon-menu-hamburger"></span>
             </button>
-
-
         </div>
         <div class="collapse navbar-collapse">
             <div class="bottom-header">
@@ -23,7 +21,7 @@
                         'theme_location' => 'header',
                         'depth' => 2,
                         'container' => 'div',
-                        'menu_id' => '',
+                        'menu_id' => 'navbar',
                         //'container_class' => 'nav-container  navbar-collapse collapse',
                         //'container_id' => 'navbar',
                         'menu_class' => 'nav navbar-nav navbar-right main-menu',
@@ -32,7 +30,7 @@
                     )) ?>
 
                     <div class="nav navbar-form navbar-rigth search-field">
-
+                        @include('partials.header.search')
                     </div>
                 </div>
             </div>

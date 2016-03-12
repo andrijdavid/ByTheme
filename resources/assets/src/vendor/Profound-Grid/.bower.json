@@ -1,0 +1,14 @@
+{
+  "name": "Profound-Grid",
+  "homepage": "https://github.com/artofrawr/profoundgrid",
+  "_release": "546cc79591",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "546cc795912a14282c62030261c49165b0074129"
+  },
+  "_source": "git://github.com/artofrawr/profoundgrid.git",
+  "_target": "*",
+  "_originalSource": "Profound-Grid",
+  "_direct": true
+}
