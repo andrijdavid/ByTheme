@@ -4,7 +4,7 @@
 <div class="container mr-20 pt-20 ml-20">
     @loop
 
-        @include(empty(Meta::get(Loop::id(), 'loopType')) ? 'partials.unique.unique1' : Meta::get(Loop::id(), 'loopType'), [
+        @include(empty(Option::get('theme-option-layout', 'galleryLoopType')) ? 'partials.unique.unique1' : Option::get('theme-option-layout', 'galleryLoopType'), [
             'title' => Loop::title(),
             'link' => Loop::link(),
             'category' => Loop::terms('gallery-category'),

@@ -36,6 +36,15 @@ return [
 		//'after_title'	=> '</header>'
 	],
 	[
+		'name'			=> __('Footer fourth sidebar', THEME_TEXT_DOMAIN),
+		'id'			=> 'footer-fourth-sidebar',
+		'description'	=> __('Area of fourth sidebar on footer', THEME_TEXT_DOMAIN),
+		'before_widget'	=> '<section id="%1$s" class="widget %2$s" ><div class="widget-wrap">',
+		'after_widget'	=> '</div></section>',
+		//'before_title'	=> '<header class="section">',
+		//'after_title'	=> '</header>'
+	],
+	[
 		'name'			=> __('Single post sidebar', THEME_TEXT_DOMAIN),
 		'id'			=> 'single-post-sidebar',
 		'description'	=> __('Area of sidebar on single post', THEME_TEXT_DOMAIN),

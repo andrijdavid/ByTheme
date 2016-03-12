@@ -1,14 +1,18 @@
 .nav {
   .menu-item{
     &:hover{
-      transform: scale(1.04);
-      a {
+      transform: scale(1.08);
+      a{
+        font-size: 1em;
         font-weight: 500;
         &:hover{
           transform: scale(1.04);
         }
       }
       border-bottom: 2px #fffde3;
+    }
+    .active {
+      border-bottom: 2px solid #fffde3;
     }
   }
 }
@@ -17,6 +21,7 @@
   opacity: 0.8;
   transition: opacity 0.5s;
 }
+
 :focus {
   color: #333;
   outline: #ccc solid 1px;

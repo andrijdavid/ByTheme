@@ -15,23 +15,26 @@
     <meta itemprop="name" content="webpage"/>
     <meta name="description" content="">
     <meta name="language" content="<?php bloginfo('language'); ?>">
-    <meta name="web_author" content="Zingabory">
+    <meta name="web_author" content="XCentrik">
     <meta name="copyright" content="<?php bloginfo('name'); ?>">
     <meta name="DC.title"
           content="<?php wp_title(Option::get('theme-option-general', 'separator'), true, Option::get('theme-option-general', 'seplocation')) ?>"/>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel="profile" href="http://gmpg.org/xfn/11">
+    @unless(empty(Option::get(" theme-option-image
+   ", "favicon")))
     <link rel="icon" href="{{ Option::get("theme-option-image", "favicon")  }}">
+    @endunless
     <link rel="canonical" href="<?php bloginfo('url'); ?>" itemprop="url">
     <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
+    @yield('head')
+    <?php wp_head(); ?>
     <style>
         {{ Option::get("theme-option-custom-code", "style") }}
     </style>
-    @yield('head')
-    <?php wp_head(); ?>
 </head>
 <body <?php body_class('clearfix mdc-bg-grey-50'); ?> >
     <div class="hidden" id="ambony"></div>
@@ -55,7 +58,7 @@
     <?php wp_footer(); ?>
     @yield('scripts')
 
-    <script defer>
+    <script>
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
             var msViewportStyle = document.createElement('style');
             msViewportStyle.appendChild(
@@ -66,7 +69,7 @@
             document.querySelector('head').appendChild(msViewportStyle);
         }
     </script>
-    <script defer>
+    <script>
         {{ Option::get("theme-option-custom-code", "javascript") }}
     </script>
 </body>

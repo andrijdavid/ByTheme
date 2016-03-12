@@ -15,14 +15,17 @@
     <meta itemprop="name" content="webpage"/>
     <meta name="description" content="">
     <meta name="language" content="<?php bloginfo('language'); ?>">
-    <meta name="web_author" content="Zingabory">
+    <meta name="web_author" content="XCentrik">
     <meta name="copyright" content="<?php bloginfo('name'); ?>">
     <meta name="DC.title"
           content="<?php wp_title(Option::get('theme-option-general', 'separator'), true, Option::get('theme-option-general', 'seplocation')) ?>"/>
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <link rel="profile" href="http://gmpg.org/xfn/11">
+    @unless(empty(Option::get(" theme-option-image
+    ", "favicon")))
     <link rel="icon" href="{{ Option::get(" theme-option-image
     ", "favicon") }}">
+    @endunless
     <link rel="canonical" href="<?php bloginfo('url'); ?>" itemprop="url">
     <!--[if lt IE 9]>
         <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>

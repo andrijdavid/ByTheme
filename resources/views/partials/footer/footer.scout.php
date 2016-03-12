@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
                         @if(is_active_sidebar('footer-first-sidebar'))
-                        <?php dynamic_sidebar('footer-first-sidebar') ?>
+                         <?php dynamic_sidebar('footer-first-sidebar') ?>
                         @endif
                     </div>
                     <div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
@@ -28,6 +28,11 @@
         </div>
     </div>
     <div class="bottom-footer pt-20 pb-10">
-        <p class="white-text text-center"><a href="">Xcentrick</a></p>
+        <p class="white-text">
+            Made by <a href="http://xcentrik.online" title="XCentrik">XCentrik</a>
+        </p>
+        <p class="text-right">
+
+        </p>
     </div>
 </div>

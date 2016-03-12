@@ -9,6 +9,7 @@ $sections = [
 	Section::make('theme-option-social', __("Social Network", THEME_TEXT_DOMAIN)),
 	Section::make('theme-option-custom-code', __('Code', THEME_TEXT_DOMAIN)),
 	Section::make('theme-option-analytic', __('Analytics', THEME_TEXT_DOMAIN)),
+	Section::make('theme-option-layout', __('Layouts', THEME_TEXT_DOMAIN)),
 	Section::make('theme-option-image',  __('Default Images', THEME_TEXT_DOMAIN))
 ];
 
@@ -66,7 +67,40 @@ $settings = [
 				Field::media('favicon', ['title' => __("Favicon", THEME_TEXT_DOMAIN)]),
 				Field::media('logo', ['title' => __("Logo", THEME_TEXT_DOMAIN)]),
 				Field::media('defaultSlider', ['title' => __("Default Slider", THEME_TEXT_DOMAIN)])
+	],
+	'theme-option-layout' => [
+		Field::select('productLoopType', [
+			[
+				'partials.unique.unique1' => __('Right Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique2' => __('Left Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique3' => __('Full width', THEME_TEXT_DOMAIN)
+			]
+		], [
+			'title' => __('Choose a loop type:', THEME_TEXT_DOMAIN),
+			'value' => 1
+		]),
+		Field::select('galleryLoopType', [
+			[
+				'partials.unique.unique1' => __('Right Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique2' => __('Left Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique3' => __('Full width', THEME_TEXT_DOMAIN)
+			]
+		], [
+			'title' => __('Choose a loop type:', THEME_TEXT_DOMAIN),
+			'value' => 1
+		]),
+		Field::select('postLoopType', [
+			[
+				'partials.unique.unique1' => __('Right Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique2' => __('Left Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique3' => __('Full width', THEME_TEXT_DOMAIN)
+			]
+		], [
+			'title' => __('Choose a loop type:', THEME_TEXT_DOMAIN),
+			'value' => 1
+		]),
 	]
+
 ];
 
 $validation = [

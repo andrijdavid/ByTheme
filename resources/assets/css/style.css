@@ -15636,10 +15636,8 @@ a.mdc-text-black-darker:focus {
   bottom: 10px !important; }
 
 .sliders {
-  position: relative;
-  height: 600px; }
+  position: relative; }
   .sliders img {
-    max-height: 600px;
     width: 100%; }
 
 .silde-description {
@@ -15850,12 +15848,16 @@ main {
   }
 }*/
 .nav .menu-item:hover {
-  transform: scale(1.04);
+  transform: scale(1.08);
   border-bottom: 2px #fffde3; }
   .nav .menu-item:hover a {
+    font-size: 1em;
     font-weight: 500; }
     .nav .menu-item:hover a:hover {
       transform: scale(1.04); }
+
+.nav .menu-item .active {
+  border-bottom: 2px solid #fffde3; }
 
 .img:hover {
   opacity: 0.8;

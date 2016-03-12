@@ -20,7 +20,7 @@ foreach ( get_post_types( ['public' => true], 'names' ) as $post_type ) {
     ]);
 
 }
-
+/*
 foreach ( get_post_types( ['public' => true], 'names' ) as $post_type ) {
     Metabox::make('loopType', $post_type)->set([
         \Themosis\Facades\Field::select('loopType', [
@@ -37,7 +37,7 @@ foreach ( get_post_types( ['public' => true], 'names' ) as $post_type ) {
         'loopType'
     ]);
 
-}
+}*/
 
 function get_post_view($ID){
     $count =  Meta::get($ID, 'post_views_count');
