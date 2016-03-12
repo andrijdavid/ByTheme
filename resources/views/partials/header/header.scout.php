@@ -13,7 +13,7 @@
                     {{--@if(empty( Option::get("theme-option-image", "logo") ))--}}
 <!--                    --><?php //bloginfo('name') ?>
                     {{--@else--}}
-                    {{--<img src="{{ Option::get(" theme-option-image", "logo") }}" alt="<?php //bloginfo('name') ?>">--}}
+                    {{--<img src=" Option::get(" theme-option-image", "logo")" alt="<?php //bloginfo('name') ?>">--}}
                     {{--@endif--}}
                 {{--</a>--}}
                 {{--<div class="container-fluid">--}}
