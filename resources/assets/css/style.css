@@ -15775,7 +15775,8 @@ a.mdc-text-black-darker:focus {
   border: none; }
 
 .top-main-menu li a {
-  padding-right: 5px; }
+  padding-right: 5px;
+  margin-right: 5px; }
 
 main {
   padding-top: 56.4px; }

@@ -53,7 +53,10 @@ Route::get('archive', 'PagesController@archive');
 // Search page
 Route::get('search', function()
 {
-    return View::make('partials.search.search')->render();
+    $s = get_query_var( 'paged', '' );
+    return View::make('partials.search.search', [
+        's' => $s
+    ])->render();
 });
 
 Route::get('404', function(){

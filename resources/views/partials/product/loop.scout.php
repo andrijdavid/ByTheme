@@ -18,6 +18,9 @@
         'description' => Meta::get(Loop::id(), 'description'),
     ])
         @endloop
+        @if(!have_posts())
+            @include('partials.empty.default')
+        @endif
         <div class="row">
             <div class="">
                 @include('partials.pagination')
