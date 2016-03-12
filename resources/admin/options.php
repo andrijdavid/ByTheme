@@ -99,6 +99,16 @@ $settings = [
 			'title' => __('Choose a loop type:', THEME_TEXT_DOMAIN),
 			'value' => 1
 		]),
+		Field::select('searchLoopType', [
+			[
+				'partials.unique.unique1' => __('Right Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique2' => __('Left Sidebar', THEME_TEXT_DOMAIN),
+				'partials.unique.unique3' => __('Full width', THEME_TEXT_DOMAIN)
+			]
+		], [
+			'title' => __('Choose a loop type:', THEME_TEXT_DOMAIN),
+			'value' => 1
+		]),
 	]
 
 ];
