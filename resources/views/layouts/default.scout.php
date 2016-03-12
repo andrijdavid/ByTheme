@@ -56,8 +56,6 @@
     <div class="hidden" id="ambany"></div>
 
     <?php wp_footer(); ?>
-    @yield('scripts')
-
     <script>
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
             var msViewportStyle = document.createElement('style');
@@ -72,5 +70,7 @@
     <script>
         {{ Option::get("theme-option-custom-code", "javascript") }}
     </script>
+    @yield('scripts')
+
 </body>
 </html>

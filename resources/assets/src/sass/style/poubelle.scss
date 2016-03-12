@@ -1,7 +1,13 @@
-.white-text{
+.white, .white-text{
   color: white;
 }
 
+.gray-border {
+  border-color: #efefef;
+  &:hover {
+    color: #efefef;
+  }
+}
 .bg-white{
   background-color: white;
 }

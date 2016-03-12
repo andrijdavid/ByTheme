@@ -22,6 +22,7 @@ Action::add('the_content', function ($content) {
     foreach ($imgs as $img) {
         $existing_class = $img->getAttribute('class');
         $img->setAttribute('class','img-responsive '. $existing_class);
+        $img->setAttribute('data-featherlight',explode(' ', $img->getAttribute('srcset'))[0]);
 
     }
 

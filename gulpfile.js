@@ -18,6 +18,7 @@ var scripts = [
     'resources/assets/src/vendor/jquery/dist/jquery.js',
     'resources/assets/src/vendor/bootstrap-sass/assets/javascripts/bootstrap.js',
     'resources/assets/src/vendor/wow/dist/wow.js',
+    'resources/assets/src/vendor/featherlight/release/featherlight.min.js',
     'resources/assets/src/js/helpers.js',
     'resources/assets/src/js/init.js'
 ];
@@ -51,7 +52,8 @@ gulp.task('galleryJS', ['cleanScript'], function(){
 
 gulp.task('galleryCSS', ['cleanStyle'], function(){
     return gulp.src([
-            'resources/assets/src/vendor/photoswipe/dist/photoswipe.css'
+            'resources/assets/src/vendor/photoswipe/dist/photoswipe.css',
+            'resources/assets/src/vendor/photoswipe/dist/default-skin/default-skin.css'
         ])
         .pipe(concat('gallery.css'))
         //.pipe(nano())
@@ -87,7 +89,11 @@ gulp.task('copy', ['cleanStyle', 'cleanScript'], function () {
     ]).pipe(gulp.dest('resources/assets/js'));
 
     gulp.src([
-        'resources/assets/src/vendor/flickity/dist/flickity.min.css'
+        'resources/assets/src/vendor/flickity/dist/flickity.min.css',
+        'resources/assets/src/vendor/photoswipe/dist/default-skin/default-skin.png',
+        'resources/assets/src/vendor/photoswipe/dist/default-skin/default-skin.svg',
+        'resources/assets/src/vendor/photoswipe/dist/default-skin/preloader.gif',
+
     ]).pipe(gulp.dest('resources/assets/css'));
 
     return gulp.src([

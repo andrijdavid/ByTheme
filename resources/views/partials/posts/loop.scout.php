@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="container pt-20 mr-20 ml-20">
+<div class="container pt-50 mr-20 ml-20">
     @loop
     @include(empty(Option::get('theme-option-layout', 'postLoopType')) ? 'partials.unique.unique1' : Option::get('theme-option-layout', 'postLoopType'), [
           'title' => Loop::title(),

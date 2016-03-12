@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container mr-20 pt-20 ml-20">
+    <div class="container mr-20 pt-50 ml-20">
         @loop
             @include('partials.unique.unique3',[
                 'title' => Loop::title(),

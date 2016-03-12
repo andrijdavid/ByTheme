@@ -24,6 +24,7 @@
             <span>
                 @unless(empty(Loop::terms("gallery-category")))
                     @foreach(Loop::terms("gallery-category") as $category)
+                        <span>/</span>
                         <a href="{{ get_term_link($category) }}" title="{{ $category->name }}" class="uppercase">
                             {{ $category->name }}
                         </a>
@@ -31,8 +32,8 @@
                 @endunless
             </span>
 
-        </div><!-- .entry-meta -->
-    </header><!-
+        </div>
+    </header>
 </div>
 @stop
 
@@ -152,7 +153,9 @@
 @stop
 
 @section("sidebar")
-    <?php dynamic_sidebar('single-gallery') ?>
+    @if(is_active_sidebar('single-gallery'))
+        <?php dynamic_sidebar('single-gallery') ?>
+    @endif
 @stop
 
 @section("scripts")

@@ -1,19 +1,24 @@
 .nav {
+  li.active{
+      border-bottom: 2px solid #fffde3;
+      a {
+        background-color: transparent !important;
+      }
+  }
+
   .menu-item{
     &:hover{
-      transform: scale(1.08);
-      a{
+      //transform: scale(1.04);
+      a {
         font-size: 1em;
-        font-weight: 500;
-        &:hover{
+
+        &:hover {
+          font-weight: bold;
           transform: scale(1.04);
         }
       }
-      border-bottom: 2px #fffde3;
     }
-    .active {
-      border-bottom: 2px solid #fffde3;
-    }
+
   }
 }
 

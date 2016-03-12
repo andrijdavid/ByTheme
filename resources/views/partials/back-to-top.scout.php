@@ -3,8 +3,7 @@
     <i class="fa fa-2x fa-arrow-circle-up"></i>
   </span>
 </div>
-@section('scripts')
-<script defer>
+<script>
     $(document).ready(function(){
 
         $(function(){
@@ -31,4 +30,3 @@
 
     });
 </script>
-@stop

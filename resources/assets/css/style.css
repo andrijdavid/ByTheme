@@ -10406,6 +10406,81 @@ button.close {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
+/**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 1.3.5 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2015, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all {
+  .featherlight {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483647;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    background: #333;
+    background: transparent; }
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, 0.8); }
+  .featherlight:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -.25em; }
+  .featherlight .featherlight-content {
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: auto;
+    padding: 25px 25px 0;
+    border-bottom: 25px solid transparent;
+    min-width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 95%;
+    background: #fff;
+    cursor: auto;
+    white-space: normal; }
+  .featherlight .featherlight-inner {
+    display: block; }
+  .featherlight .featherlight-close-icon {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    line-height: 25px;
+    width: 25px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial,sans-serif;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000; }
+  .featherlight .featherlight-image {
+    width: 100%; }
+  .featherlight-iframe .featherlight-content {
+    border-bottom: 0;
+    padding: 0; }
+  .featherlight iframe {
+    border: 0; } }
+
+@media only screen and (max-width: 1024px) {
+  .featherlight .featherlight-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 98%;
+    padding: 10px 10px 0;
+    border-bottom: 10px solid transparent; } }
+
 /*!
  *  Material Design Color Palette by Sergey Kupletsky (@zavoloklom) - http://zavoloklom.github.io/material-design-color-palette/
  *  License - https://github.com/zavoloklom/material-design-color-palette/blob/master/License (MIT license)
@@ -15690,8 +15765,17 @@ a.mdc-text-black-darker:focus {
 .cands {
   background-color: #1c3942; }
 
+.navbar-inverse {
+  border: none; }
+
+.navbar-brand {
+  font-size: 30px; }
+
+.navbar-header {
+  border: none; }
+
 main {
-  padding-top: 63px; }
+  padding-top: 56.4px; }
 
 /* Widget Styling
 ------------------------------------------------------------ */
@@ -15847,17 +15931,16 @@ main {
     height: 280px;
   }
 }*/
-.nav .menu-item:hover {
-  transform: scale(1.08);
-  border-bottom: 2px #fffde3; }
-  .nav .menu-item:hover a {
-    font-size: 1em;
-    font-weight: 500; }
-    .nav .menu-item:hover a:hover {
-      transform: scale(1.04); }
-
-.nav .menu-item .active {
+.nav li.active {
   border-bottom: 2px solid #fffde3; }
+  .nav li.active a {
+    background-color: transparent !important; }
+
+.nav .menu-item:hover a {
+  font-size: 1em; }
+  .nav .menu-item:hover a:hover {
+    font-weight: bold;
+    transform: scale(1.04); }
 
 .img:hover {
   opacity: 0.8;
@@ -16221,8 +16304,13 @@ main {
     left: -14px;
     right: auto; } }
 
-.white-text {
+.white, .white-text {
   color: white; }
+
+.gray-border {
+  border-color: #efefef; }
+  .gray-border:hover {
+    color: #efefef; }
 
 .bg-white {
   background-color: white; }
