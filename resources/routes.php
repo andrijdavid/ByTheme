@@ -14,18 +14,20 @@ Route::any('home', 'PagesController@home');
 // The front page
 Route::any('front', 'PagesController@front');
 
-Route::get('page', ['about', 'uses' => 'PagesController@about']);
-Route::get('page', ['contact', 'uses' => 'PagesController@contact']);
+//Route::get('page', ['about', 'uses' => 'PagesController@about']);
+//Route::get('page', ['contact', 'uses' => 'PagesController@contact']);
 
 Route::get('postTypeArchive', array('post', 'uses' => 'PostController@loop'));
 Route::get('singular', array('post', 'uses'=> 'PostController@single'));
-
 
 Route::get('postTypeArchive', array('galleries', 'uses' => 'GalleriesController@loop'));
 Route::get('singular', array('galleries', 'uses' => 'GalleriesController@single'));
 
 Route::get('postTypeArchive', array('products', 'uses' => 'ProductsController@loop'));
 Route::get('singular', array('products', 'uses' => 'ProductsController@single'));
+
+Route::get('postTypeArchive', array('faqs', 'uses' => 'FaqsController@loop'));
+Route::get('postTypeArchive', array('faq-category', 'uses' => 'FaqsController@single'));
 
 
 Route::get('page', 'PagesController@page');

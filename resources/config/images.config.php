@@ -23,6 +23,7 @@ return [
     'postSingleThumbnail' => [800, 600,true, true],
     'homeSlider' => [1170, 630,true, true],
     'singlePost' => [1170, 630, true, true],
+    'eventThumbnail' => [300,300, true, true],
     'relatedPostThumbnail' => [300, 300, true, true],
     'recentPostThumbnail' => [400, 300, true, true],
 
