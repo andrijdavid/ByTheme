@@ -5,7 +5,7 @@
         <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 @loop
-                    @unless(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'answer')))
+                    @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'answer')))
                         <div class="panel panel-default">
                             <div class="panel-heading" id="heading-{{Themosis\Facades\Loop::id()}}">
                                 <h4 class="panel-title">
@@ -20,7 +20,7 @@
                             <div id="collapse-{{Themosis\Facades\Loop::id()}}" class="panel-collapse collapse in" role="tabpanel"
                                  aria-labelledby="heading-{{Themosis\Facades\Loop::id()}}">
                                 <div class="panel-body">
-                                    {{\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'answer') }}
+                                    {{\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'answer') }}
                                 </div>
                                 <div class="panel-footer">
                                     <a href="{{Themosis\Facades\Loop::link()}}">Open</a>

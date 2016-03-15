@@ -9,7 +9,7 @@
           'category' =>\Themosis\Facades\Loop::gategory(),
           'tags' =>\Themosis\Facades\Loop::tags(),
           'excerpt' =>\Themosis\Facades\Loop::excerpt(),
-          'thumbnail' =>\Themosis\Facades\Loop::thumbnailUrl(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'loopType')),
+          'thumbnail' =>\Themosis\Facades\Loop::thumbnailUrl(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'loopType')),
           'date' =>\Themosis\Facades\Loop::date(),
           'year' =>\Themosis\Facades\Loop::date('Y'),
           'month' =>\Themosis\Facades\Loop::date('m'),

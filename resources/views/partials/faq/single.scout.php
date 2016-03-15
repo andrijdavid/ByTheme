@@ -9,7 +9,7 @@
                         {{\Themosis\Facades\Loop::title() }}
                     </div>
                     <div class="panel-body">
-                        {{\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'answer') }}
+                        {{\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'answer') }}
                     </div>
                     <div class="panel-footer social-share-here">
                         <div class="">

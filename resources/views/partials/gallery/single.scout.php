@@ -1,5 +1,5 @@
 @loop
-@extends(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.default' :\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
+@extends(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.default' :\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
 @endloop
 
 @section("header")
@@ -100,8 +100,8 @@
     <div class="container gal-wrapper">
 
         <div class="my-gallery gal" itemscope itemtype="http://schema.org/ImageGallery">
-            @unless(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'images') ))
-                @foreach(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'images') as $image)
+            @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'images') ))
+                @foreach(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'images') as $image)
                     <?php
                     $attachment = get_post($image);
                     ?>

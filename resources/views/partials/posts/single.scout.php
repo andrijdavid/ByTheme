@@ -1,5 +1,5 @@
 @loop
-@extends(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.rightsidebar' :\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
+@extends(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.rightsidebar' :\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
 @endloop
 
 @section('sidebar')

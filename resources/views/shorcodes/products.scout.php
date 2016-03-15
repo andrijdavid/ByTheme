@@ -16,18 +16,18 @@ if (isset($atts) && array_key_exists($atts, 'template')) {
 ?>
 <div class="container">
     @foreach(ProductModel::all() as $product)
-        @include(empty(\Themosis\MetaBox\Meta::get($product->id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\MetaBox\Meta::get($product->id(), 'loopType'),[
+        @include(empty(\Themosis\Metabox\Meta::get($product->id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\Metabox\Meta::get($product->id(), 'loopType'),[
             'title' => $product->title(),
             'link' => $product->link(),
             'category' => $product->terms('product-category'),
             'tags' => $product->terms('product-tags'),
             'excerpt' => $product->excerpt(),
-            'thumbnail' => $product->thumbnailUrl(empty(\Themosis\MetaBox\Meta::get($product->id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\MetaBox\Meta::get($product->id(), 'loopType')),
+            'thumbnail' => $product->thumbnailUrl(empty(\Themosis\Metabox\Meta::get($product->id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\Metabox\Meta::get($product->id(), 'loopType')),
             'date' => $product->date(),
             'year' => $product->date('Y'),
             'month' => $product->date('m'),
             'day' => $product->date('d'),
-            'description' =>\Themosis\MetaBox\Meta::get($product->id(), 'description'),
+            'description' =>\Themosis\Metabox\Meta::get($product->id(), 'description'),
         ])
     @endforeach
 </div>

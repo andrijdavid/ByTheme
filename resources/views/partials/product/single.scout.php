@@ -1,5 +1,5 @@
 @loop
-@extends(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.default' :\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
+@extends(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.default' :\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
 @endloop
 
 @section('content')
@@ -8,8 +8,8 @@
         <div id="slider" class="carousel slide sliders" data-ride="carousel" data-interval="3000" data-pause="click">
             <div class="carousel-inner" role="listbox">
 
-                @unless( empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'images')))
-                    @foreach(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'images') as $key => $image)
+                @unless( empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'images')))
+                    @foreach(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'images') as $key => $image)
                         <div class="item <?php if ($key == 0) { ?> active <?php } ?>">
                             @if(empty(wp_get_attachment_image_src($image, 'productSingleSlider')[0]))
                                 <img src="{{\Themosis\Page\Option::get("theme-option-theme", "defaultSlider") }}"
@@ -50,14 +50,14 @@
 
             <div class="row mt-20 pr-20 pl-20">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    @unless(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'description')))
+                    @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'description')))
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h2> {{\Themosis\Facades\Loop::title() }} </h2>
                             </div>
                             <div class="panel-body">
                                 <p class="text-justify">
-                                    {{\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'description') }}
+                                    {{\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'description') }}
                                 </p>
                             </div>
                         </div>
@@ -65,11 +65,11 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    @unless(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'info')))
+                    @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'info')))
                         <div class="table-responsive">
                             <table class="table table-hover table-bordered table-striped">
                                 <tbody>
-                                @foreach(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'info') as $key => $arr)
+                                @foreach(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'info') as $key => $arr)
                                     <tr>
                                         <td class="capitalize"> {{ $arr['title'] }}</td>
                                         <td class="capitalize"> {{ $arr['value'] }}</td>

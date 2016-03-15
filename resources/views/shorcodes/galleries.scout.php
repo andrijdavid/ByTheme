@@ -22,12 +22,12 @@ if(isset($atts) && array_key_exists($atts, 'template')){
         'category' => $gallery->terms('gallery-category'),
         'tags' => $gallery->terms('gallery-tags'),
         'excerpt' => $gallery->excerpt(),
-        'thumbnail' => $gallery->thumbnailUrl(empty(\Themosis\MetaBox\Meta::get($gallery->id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\MetaBox\Meta::get($gallery->id(), 'loopType')),
+        'thumbnail' => $gallery->thumbnailUrl(empty(\Themosis\Metabox\Meta::get($gallery->id(), 'loopType')) ? 'partials.unique.unique1' :\Themosis\Metabox\Meta::get($gallery->id(), 'loopType')),
         'date' => $gallery->date(),
         'year' => $gallery->date('Y'),
         'month' => $gallery->date('m'),
         'day' => $gallery->date('d'),
-        'description' =>\Themosis\MetaBox\Meta::get($gallery->id(), 'description'),
+        'description' =>\Themosis\Metabox\Meta::get($gallery->id(), 'description'),
     ])
 @endforeach
 </div>
