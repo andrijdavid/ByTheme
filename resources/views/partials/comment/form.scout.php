@@ -1,7 +1,7 @@
-{{ Form::open() }}
+{{ Themosis\Facades\Form::open() }}
 
 
 
 
 
-{{ Form::close()}}
+{{ Themosis\Facades\Form::close()}}
