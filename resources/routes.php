@@ -9,6 +9,7 @@
  *
  */
 use Themosis\Facades\Route;
+use Themosis\Facades\View;
 
 Route::any('home', 'PagesController@home');
 
