@@ -3,7 +3,7 @@
 @section('content')
     <div class="container pt-50 mr-20 ml-20 pb-40">
         @loop
-            @include(empty(Option::get('theme-option-layout', 'searchLoopType')) ? 'partials.unique.unique1' : Option::get('theme-option-layout', 'searchLoopType'), [
+            @include(empty(\Themosis\Page\Option::get('theme-option-layout', 'searchLoopType')) ? 'partials.unique.unique1' :\Themosis\Page\Option::get('theme-option-layout', 'searchLoopType'), [
                   'title' => Loop::title(),
                   'link' => Loop::link(),
                   'category' => Loop::gategory(),

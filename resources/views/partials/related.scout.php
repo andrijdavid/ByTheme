@@ -25,7 +25,7 @@ if (!isset($posts) && empty($posts)) {
                     <div class="media-left media-middle">
                         <a href="{{$item->link()}}">
                             @if(empty($item->thumbnailUrl('relatedPostThumbnail')))
-                                <img src="{{ Option::get("theme-option-theme", "defaultSlider") }}" alt="{{ $item->title() }}">
+                                <img src="{{\Themosis\Page\Option::get("theme-option-theme", "defaultSlider") }}" alt="{{ $item->title() }}">
                             @else
                                 <img src="{{$item->thumbnailUrl('relatedPostThumbnail')}}" alt="{{$item->title()}}"
                                      class="media-object img-circle" width="100px" height="100px">

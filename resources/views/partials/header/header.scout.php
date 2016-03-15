@@ -22,10 +22,10 @@
             </div>
             <div class="bottom-header">
                 <a class="navbar-brand capitalize " href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?>">
-                    @if(empty( Option::get("theme-option-image", "logo") ))
+                    @if(empty(\Themosis\Page\Option::get("theme-option-image", "logo") ))
                         <?php bloginfo('name') ?>
                     @else
-                        <img src="{{ Option::get(" theme-option-image", "logo") }}" alt="<?php bloginfo('name') ?>">
+                        <img src="{{\Themosis\Page\Option::get(" theme-option-image", "logo") }}" alt="<?php bloginfo('name') ?>">
                     @endif
                 </a>
                 <div class="container ">

@@ -4,7 +4,7 @@
     <div class="container pt-50 pb-40">
         @loop
             @unless(empty(Meta::get(Loop::id(), 'images')))
-                @include(empty(Option::get('theme-option-layout', 'galleryLoopType')) ? 'partials.unique.unique1' : Option::get('theme-option-layout', 'galleryLoopType'), [
+                @include(empty(\Themosis\Page\Option::get('theme-option-layout', 'galleryLoopType')) ? 'partials.unique.unique1' :\Themosis\Page\Option::get('theme-option-layout', 'galleryLoopType'), [
                     'title' => Loop::title(),
                     'link' => Loop::link(),
                     'category' => Loop::terms('gallery-category'),

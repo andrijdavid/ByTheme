@@ -3,7 +3,7 @@
         @foreach($post as $key => $item)
             <div class="item <?php if($key == 0) {?> active <?php } ?>">
                 @if(empty($item->thumbnailUrl('homeSlider')))
-                    <img src="{{ Option::get("theme-option-theme", "defaultSlider") }}" alt="{{ $item->title() }}">
+                    <img src="{{\Themosis\Page\Option::get("theme-option-theme", "defaultSlider") }}" alt="{{ $item->title() }}">
                 @else
                     <img src="{{  $item->thumbnailUrl('homeSlider') }}" alt="{{ $item->title() }}" class="img-responsive">
                 @endif

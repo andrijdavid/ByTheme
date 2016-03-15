@@ -12,7 +12,7 @@
                     @foreach(Meta::get(Loop::id(), 'images') as $key => $image)
                         <div class="item <?php if ($key == 0) { ?> active <?php } ?>">
                             @if(empty(wp_get_attachment_image_src($image, 'productSingleSlider')[0]))
-                                <img src="{{ Option::get("theme-option-theme", "defaultSlider") }}"
+                                <img src="{{\Themosis\Page\Option::get("theme-option-theme", "defaultSlider") }}"
                                      alt="{{ Loop::title() }}">
                             @else
                                 <img src="{{  wp_get_attachment_image_src($image, 'productSingleSlider')[0] }}"
