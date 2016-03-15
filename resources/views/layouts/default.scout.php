@@ -33,7 +33,7 @@
     @yield('head')
     <?php wp_head(); ?>
     <style>
-        {{ Option::get("theme-option-custom-code", "style") }}
+        {{\Themosis\Page\Option::get("theme-option-custom-code", "style") }}
     </style>
 </head>
 <body <?php body_class('clearfix mdc-bg-grey-50'); ?> >
@@ -68,7 +68,7 @@
         }
     </script>
     <script>
-        {{ Option::get("theme-option-custom-code", "javascript") }}
+        {{\Themosis\Page\Option::get("theme-option-custom-code", "javascript") }}
     </script>
     @yield('scripts')
 

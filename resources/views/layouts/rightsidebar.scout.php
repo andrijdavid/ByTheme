@@ -32,7 +32,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
     <style>
-        {{ Option::get("theme-option-custom-code", "style") }}
+        {{ \Themosis\Page\Option::get("theme-option-custom-code", "style") }}
     </style>
     @yield('head')
     <?php wp_head(); ?>
@@ -80,7 +80,7 @@
 <?php wp_footer(); ?>
 @yield('scripts')
 <script defer>
-    {{  Option::get("theme-option-custom-code", "javascript")  }}
+    {{  \Themosis\Page\Option::get("theme-option-custom-code", "javascript")  }}
 </script>
 <script defer>
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
