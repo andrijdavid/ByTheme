@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="container pt-50 pb-40">
+<div class="container pt-60 mt-20 pb-40">
     @loop
     @include(empty(\Themosis\Page\Option::get('theme-option-layout', 'postLoopType')) ? 'partials.unique.unique1' :\Themosis\Page\Option::get('theme-option-layout', 'postLoopType'), [
           'title' => Loop::title(),

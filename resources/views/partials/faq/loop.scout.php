@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-50 pb-40">
+    <div class="container pt-60 mt-20 pb-40">
         <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 @loop
