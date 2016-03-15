@@ -17,7 +17,7 @@ class FaqsController extends BaseController
 
     public function loop()
     {
-        return View::make('partials.faqs.loop', [
+        return View::make('partials.faq.loop', [
             'faqs' => FaqModel::all()
         ])->render();
     }

@@ -21,7 +21,7 @@
                     ?>
             </div>
             <div class="bottom-header">
-                <a class="navbar-brand capitalize " href="<?php esc_url(home_url()) ?>" title="<?php bloginfo('name') ?>">
+                <a class="navbar-brand capitalize " href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?>">
                     @if(empty( Option::get("theme-option-image", "logo") ))
                         <?php bloginfo('name') ?>
                     @else

@@ -15703,6 +15703,9 @@ a.mdc-text-black-darker:focus {
 .no-shadow {
   box-shadow: none; }
 
+.no-border-radius {
+  border-radius: 0px !important; }
+
 .text-float {
   background: rgba(247, 245, 242, 0.9);
   color: #222222;
@@ -15779,7 +15782,8 @@ a.mdc-text-black-darker:focus {
   margin-right: 5px; }
 
 main {
-  padding-top: 56.4px; }
+  padding-top: 56.4px;
+  padding-bottom: 40px; }
 
 /* Widget Styling
 ------------------------------------------------------------ */
@@ -16121,6 +16125,9 @@ main {
     transition: all 0.8s; }
   .social-share-horizontal a {
     background-color: #D3D3D3; }
+
+.social-share-here {
+  min-height: 70px !important; }
 
 .scroll-top-wrapper {
   position: fixed;
@@ -16943,3 +16950,6 @@ hr {
 
 .menu-item ul li a {
   color: #fff; }
+
+.faq-category-list li {
+  list-style: none; }

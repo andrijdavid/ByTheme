@@ -27,7 +27,9 @@ Route::get('postTypeArchive', array('products', 'uses' => 'ProductsController@lo
 Route::get('singular', array('products', 'uses' => 'ProductsController@single'));
 
 Route::get('postTypeArchive', array('faqs', 'uses' => 'FaqsController@loop'));
-Route::get('postTypeArchive', array('faq-category', 'uses' => 'FaqsController@single'));
+Route::get('singular', array('faqs', 'uses' => 'FaqsController@single'));
+Route::get('tax', array('faq-category', 'uses' => 'FaqsController@loop'));
+Route::get('tax', array('faq-tag', 'uses' => 'FaqsController@loop'));
 
 
 Route::get('page', 'PagesController@page');
@@ -52,7 +54,8 @@ Route::get('year', 'PagesController@year');
 Route::get('postTypeArchive', 'PagesController@archive');
 Route::get('archive', 'PagesController@archive');
 
-// Search page
+// Search pag
+//e
 Route::get('search', function()
 {
     $s = (string) get_query_var('s', ' ');
