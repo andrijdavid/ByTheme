@@ -8,6 +8,8 @@
  * http://codex.wordpress.org/Conditional_Tags
  *
  */
+use Themosis\Facades\Route;
+
 Route::any('home', 'PagesController@home');
 
 //*****
