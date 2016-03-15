@@ -5,16 +5,16 @@
     <div class="container mt-50 mb-50">
         @loop
         @include('partials.unique.unique2',[
-            'title' => Loop::title(),
-            'link' => Loop::link(),
-            'category' => Loop::category(),
-            'tags' => Loop::tags(),
-            'excerpt' => Loop::excerpt(),
-            'thumbnail' => Loop::thumbnailUrl(),
-            'date' => Loop::date(),
-            'year' => Loop::date('Y'),
-            'month' => Loop::date('m'),
-            'day' => Loop::date('d'),
+            'title' => Themosis\Facades\Loop::title(),
+            'link' => Themosis\Facades\Loop::link(),
+            'category' => Themosis\Facades\Loop::category(),
+            'tags' => Themosis\Facades\Loop::tags(),
+            'excerpt' => Themosis\Facades\Loop::excerpt(),
+            'thumbnail' => Themosis\Facades\Loop::thumbnailUrl(),
+            'date' => Themosis\Facades\Loop::date(),
+            'year' => Themosis\Facades\Loop::date('Y'),
+            'month' => Themosis\Facades\Loop::date('m'),
+            'day' => Themosis\Facades\Loop::date('d'),
 
         ])
         @endloop

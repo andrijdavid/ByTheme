@@ -1,5 +1,5 @@
 @loop
-@extends(empty(Meta::get(Loop::id(), 'layout')) ? 'layouts.rightsidebar' : Meta::get(Loop::id(), 'layout'))
+@extends(empty(Themosis\MetaBox\Meta::get(Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.rightsidebar' : Themosis\MetaBox\Meta::get(Themosis\Facades\Loop::id(), 'layout'))
 @endloop
 
 @section('sidebar')
@@ -10,7 +10,7 @@
 
 @section('header')
 <div class="no-padding no-margin full-width singlepost-header">
-    <img src="{{ Loop::thumbnailUrl('singlePostThumbnail')}}" alt="{{ Loop::title() }}"
+    <img src="{{ Themosis\Facades\Loop::thumbnailUrl('singlePostThumbnail')}}" alt="{{ Themosis\Facades\Loop::title() }}"
          class="img-responsive transparent-overlay">
 </div>
 
@@ -18,25 +18,25 @@
 
 @section('content')
 <div class="container fit bg-white">
-    <article itemscope itemtype="http://schema.org/NewsArticle" {{ Loop::postClass(
+    <article itemscope itemtype="http://schema.org/NewsArticle" {{ Themosis\Facades\Loop::postClass(
     'post-unique p-20') }} />
 
     <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage"
           itemid="https://google.com/article"/>
 
     <header class="text-center page-header jumbotron singlepost-title">
-        <h1 itemprop="headline" class="text-center uppercase">{{ Loop::title() }}</h1>
+        <h1 itemprop="headline" class="text-center uppercase">{{ Themosis\Facades\Loop::title() }}</h1>
         <h2>
-            <a href="{{ get_day_link(Loop::date('Y'), Loop::date('n') ,Loop::date('j')) }}">
-                <time itemprop="datePublished" datetime="{{ Loop::date() }}">
-                    {{ Loop::date() }}
+            <a href="{{ get_day_link(Themosis\Facades\Loop::date('Y'), Themosis\Facades\Loop::date('n') ,Themosis\Facades\Loop::date('j')) }}">
+                <time itemprop="datePublished" datetime="{{ Themosis\Facades\Loop::date() }}">
+                    {{ Themosis\Facades\Loop::date() }}
                 </time>
             </a>
         </h2>
-        @unless(empty(Loop::category()))
+        @unless(empty(Themosis\Facades\Loop::category()))
         <div class="">
             <?php _e("In", THEME_TEXT_DOMAIN) ?>
-            @foreach(Loop::category() as $cat)
+            @foreach(Themosis\Facades\Loop::category() as $cat)
             <br><a href="{{ get_term_link($cat) }}" title="{{ $cat->name}}" class="capitalize">
                 {{ $cat->name }}
             </a>
@@ -46,7 +46,7 @@
     </header>
 
     <main itemprop="articleBody" class="clearfix text-justify">
-        {{ Loop::content() }}
+        {{ Themosis\Facades\Loop::content() }}
     </main>
 
     <footer>
@@ -57,25 +57,25 @@
                 </div>
             </div>
             @include('partials.social.horizontal', [
-            'title' => Loop::title(),
-            'url' => Loop::link(),
-            'img' => Loop::thumbnailUrl('thumbnail')
+            'title' => Themosis\Facades\Loop::title(),
+            'url' => Themosis\Facades\Loop::link(),
+            'img' => Themosis\Facades\Loop::thumbnailUrl('thumbnail')
             ])
         </div>
 
         <div class="container-fluid">
-            @unless(empty(Loop::category()))
+            @unless(empty(Themosis\Facades\Loop::category()))
             @include('partials.category', [
-            'categories' => Loop::category()
+            'categories' => Themosis\Facades\Loop::category()
             ])
             @endunless
         </div>
 
         <div class="container-fluid">
-            @unless(empty(Loop::tags()))
+            @unless(empty(Themosis\Facades\Loop::tags()))
             {{--
             <div class="right">--}}
-                {{--@foreach(Loop::tags() as $tag)--}}
+                {{--@foreach(Themosis\Facades\Loop::tags() as $tag)--}}
                 {{--
                 <div class="chip">--}}
                     {{--<a href="{{ get_term_link($tag) }}" rel="tag" title="{{ $tag->name }}">--}}
@@ -89,7 +89,7 @@
             </div>
             --}}
             @include('partials.tag', [
-            'tags' => Loop::tags()
+            'tags' => Themosis\Facades\Loop::tags()
             ])
             @endunless
         </div>
@@ -100,7 +100,7 @@
     <div class="row">
         <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 p-30">
             @include('partials.related', [
-            'id' => Loop::id()
+            'id' => Themosis\Facades\Loop::id()
             ])
 
             @include('partials.recent', [
