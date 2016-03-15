@@ -39,17 +39,20 @@ Route::get('singular', 'PagesController@singular');
 //Route::get('attachment', 'PagesController@attachment');
 //Route::get('author', 'PagesController@author');
 //Route::get('category', 'PagesController@category');
-Route::get('date', 'PagesController@date');
+
 Route::get('day', 'PagesController@day');
 Route::get('month', 'PagesController@month');
+Route::get('time', 'PagesController@time');
+Route::get('year', 'PagesController@year');
+Route::get('date', 'PagesController@date');
+
 //Route::get('paged', 'PagesController@paged');
 //Route::get('sticky', 'PagesController@sticky');
 //
 Route::get('tag', 'PagesController@tag');
 Route::get('tax', 'PagesController@tax');
 
-Route::get('time', 'PagesController@time');
-Route::get('year', 'PagesController@year');
+
 
 Route::get('postTypeArchive', 'PagesController@archive');
 Route::get('archive', 'PagesController@archive');

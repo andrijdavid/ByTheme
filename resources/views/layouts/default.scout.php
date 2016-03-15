@@ -42,11 +42,11 @@
         @include('partials.header.header')
     </header>
 
-    <main role="main">
-        <div class="container-fluid clearfix no-padding">
+    <main class="container-fluid clearfix no-padding">
+        {{--<div class="container-fluid clearfix no-padding">--}}
             @yield('header')
             @yield('content')
-        </div>
+        {{--</div>--}}
     </main>
 
     <footer itemscope itemtype="http://schema.org/WPFooter" class="footer">

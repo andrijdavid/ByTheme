@@ -5,6 +5,7 @@
  * Date: 1/19/16
  * Time: 9:51 PM
  */
+use Themosis\Facades\Asset;
 
 /**
  * Frontend asset

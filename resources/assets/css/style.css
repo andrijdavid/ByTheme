@@ -15782,8 +15782,7 @@ a.mdc-text-black-darker:focus {
   margin-right: 5px; }
 
 main {
-  padding-top: 56.4px;
-  padding-bottom: 40px; }
+  padding-top: 56.4px; }
 
 /* Widget Styling
 ------------------------------------------------------------ */
@@ -16583,8 +16582,9 @@ img.wp-smiley,
   margin: 0px; }
 
 .event-list > li > .info > .desc {
-  font-size: 13pt;
-  font-weight: 300;
+  font-size: 12pt;
+  line-height: 17.5px;
+  font-weight: 200;
   margin: 0px; }
 
 .event-list > li > .info > ul,

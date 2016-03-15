@@ -1,5 +1,10 @@
 <?php
 
+use Themosis\Facades\Field;
+use Themosis\Facades\Metabox;
+use Themosis\Facades\PostType;
+use Themosis\Facades\Taxonomy;
+
 $cat = Taxonomy::make('gallery-category', 'galleries', __('Gallery Categories', THEME_TEXT_DOMAIN), __('Gallery Category',THEME_TEXT_DOMAIN))->set([
     'public'             => true,
     'show_in_nav_menus'  => true,

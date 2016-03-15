@@ -1,5 +1,9 @@
 <?php
 
+use Themosis\Facades\Field;
+use Themosis\Facades\Page;
+use Themosis\Facades\Section;
+
 $page = Page::make('theme-option', 'Option du theme')->set();
 
 $sections = [

@@ -8,6 +8,9 @@
  *
  */
 
+
+use Themosis\Facades\Action;
+
 Action::add('the_content', function ($content) {
 
     if(empty($content))

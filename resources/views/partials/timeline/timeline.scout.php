@@ -3,7 +3,7 @@
     @loop
     <li class="{{ arrayRand(["timeline-inverted", ""]) }}">
         <div class="timeline-badge">
-            <a href="{{ get_day_link(Loop::date("Y"),Loop::date("m"),Loop::date("d")) }}" class="inherit bold miangeza">
+            <a href="{{ get_day_link(Loop::date("Y"),Loop::date("m"),Loop::date("d")) }}" class="inherit bold miangeza" data-toggle="tooltip" data-placement="{{arrayRand(['top', 'bottom', 'left', 'right']) }}" title="{{ Loop::date() }}">
                 {{ Loop::date("d") }}
             </a>
         </div>

@@ -8,6 +8,8 @@
  * As: view.php
  * For: business
  */
+use Themosis\Facades\View;
+
 View::share([
     'today' => \Carbon\Carbon::now()
 

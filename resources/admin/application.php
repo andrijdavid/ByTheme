@@ -3,7 +3,10 @@
  * Add layout metabox for all post type
  */
 
-foreach ( get_post_types( ['public' => true], 'names' ) as $post_type ) {
+use Themosis\Facades\Metabox;
+use Themosis\Metabox\Meta;
+
+foreach (get_post_types( ['public' => true], 'names' ) as $post_type ) {
     Metabox::make(__('Layouts', THEME_TEXT_DOMAIN), $post_type)->set([
         \Themosis\Facades\Field::select('layout', [
             [

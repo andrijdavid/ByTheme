@@ -50,8 +50,9 @@
   margin: 0px;
 }
 .event-list > li > .info > .desc {
-  font-size: 13pt;
-  font-weight: 300;
+  font-size: 12pt;
+  line-height: 17.5px;
+  font-weight: 200;
   margin: 0px;
 }
 .event-list > li > .info > ul,
@@ -155,6 +156,7 @@
   .event-list > li > .info > .title,
   .event-list > li > .info > .desc {
     padding: 0px 10px;
+
   }
   .event-list > li > .info > ul {
     position: absolute;

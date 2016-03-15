@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-50">
+    <div class="container pt-50 pb-40">
         @loop
         @include(empty(Option::get('theme-option-layout', 'productLoopType')) ? 'partials.unique.unique1' : Option::get('theme-option-layout', 'productLoopType'), [
 

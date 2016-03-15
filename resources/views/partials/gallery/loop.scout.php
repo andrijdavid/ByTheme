@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-50">
+    <div class="container pt-50 pb-40">
         @loop
             @unless(empty(Meta::get(Loop::id(), 'images')))
                 @include(empty(Option::get('theme-option-layout', 'galleryLoopType')) ? 'partials.unique.unique1' : Option::get('theme-option-layout', 'galleryLoopType'), [

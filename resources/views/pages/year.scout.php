@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="container pt-50">
+<div class="container pt-50 pb-40">
     @include('partials.timeline.event')
     @include('partials.pagination')
 </div>
