@@ -1,4 +1,6 @@
 <?php
+use Themosis\Facades\Asset;
+use Themosis\Facades\View;
 
 /**
  * Created by PhpStorm.

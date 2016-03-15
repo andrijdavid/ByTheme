@@ -1,4 +1,5 @@
 <?php
+use Themosis\Facades\View;
 
 /**
  * Created by Andrij David.

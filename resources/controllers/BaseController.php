@@ -1,5 +1,8 @@
 <?php
 
+use Themosis\Facades\View;
+use Themosis\Route\Controller;
+
 class BaseController extends Controller
 {
     /**

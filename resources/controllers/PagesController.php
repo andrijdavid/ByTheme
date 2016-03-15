@@ -1,5 +1,7 @@
 <?php
 
+use Themosis\Facades\View;
+
 class PagesController extends BaseController {
 
 	public function page(){
