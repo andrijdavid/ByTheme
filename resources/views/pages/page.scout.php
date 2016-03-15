@@ -8,10 +8,10 @@
                 <div class=" fit">
                     <article>
                         <header>
-                            <h1 class="text-center">{{ Themosis\Facades\Loop::title()}}</h1>
+                            <h1 class="text-center">{{\Themosis\Facades\Loop::title()}}</h1>
                         </header>
                         <section>
-                            {{ Themosis\Facades\Loop::content() }}
+                            {{\Themosis\Facades\Loop::content() }}
                         </section>
                     </article>
 

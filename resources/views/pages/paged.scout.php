@@ -6,10 +6,10 @@
         <div class="bg-white fit">
             <article>
                 <header>
-                    <h1>{{ Themosis\Facades\Loop::title()}}</h1>
+                    <h1>{{\Themosis\Facades\Loop::title()}}</h1>
                 </header>
                 <section>
-                    {{ Themosis\Facades\Loop::content() }}
+                    {{\Themosis\Facades\Loop::content() }}
                 </section>
             </article>
 

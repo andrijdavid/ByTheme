@@ -1,29 +1,29 @@
 @loop
-@extends(empty(Themosis\MetaBox\Meta::get(Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.default' : Themosis\MetaBox\Meta::get(Themosis\Facades\Loop::id(), 'layout'))
+@extends(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.default' :\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
 @endloop
 
 @section("header")
 <div class="no-padding no-margin full-width singlepost-header">
-    <img src="{{ Themosis\Facades\Loop::thumbnailUrl('singlePostThumbnail')}}" alt="{{ Themosis\Facades\Loop::title() }}"
+    <img src="{{\Themosis\Facades\Loop::thumbnailUrl('singlePostThumbnail')}}" alt="{{\Themosis\Facades\Loop::title() }}"
          class="img-responsive transparent-overlay">
 
     <header class="animated fadeInUpBig center text-center gallery-caption">
         <h1 class="">
             <strong class="uppercase">
-                {{ Themosis\Facades\Loop::title() }}
+                {{\Themosis\Facades\Loop::title() }}
             </strong>
         </h1>
 
         <div class="">
-            <!--  <a href="{{ Themosis\Facades\Loop::link() }}" rel="bookmark" style="color:inherit"> -->
-            <a href="{{ get_day_link(Themosis\Facades\Loop::date('Y'), Themosis\Facades\Loop::date('n') ,Themosis\Facades\Loop::date('j')) }}">
-                <time class="" datetime="{{ Themosis\Facades\Loop::date() }}">
-                    {{ Themosis\Facades\Loop::date() }}
+            <!--  <a href="{{\Themosis\Facades\Loop::link() }}" rel="bookmark" style="color:inherit"> -->
+            <a href="{{ get_day_link(\Themosis\Facades\Loop::date('Y'),\Themosis\Facades\Loop::date('n') ,Themosis\Facades\Loop::date('j')) }}">
+                <time class="" datetime="{{\Themosis\Facades\Loop::date() }}">
+                    {{\Themosis\Facades\Loop::date() }}
                 </time>
             </a>
             <span>
-                @unless(empty(Themosis\Facades\Loop::terms("gallery-category")))
-                    @foreach(Themosis\Facades\Loop::terms("gallery-category") as $category)
+                @unless(empty(\Themosis\Facades\Loop::terms("gallery-category")))
+                    @foreach(\Themosis\Facades\Loop::terms("gallery-category") as $category)
                         <span>/</span>
                         <a href="{{ get_term_link($category) }}" title="{{ $category->name }}" class="uppercase">
                             {{ $category->name }}
@@ -100,8 +100,8 @@
     <div class="container gal-wrapper">
 
         <div class="my-gallery gal" itemscope itemtype="http://schema.org/ImageGallery">
-            @unless(empty(Themosis\MetaBox\Meta::get(Themosis\Facades\Loop::id(), 'images') ))
-                @foreach(Themosis\MetaBox\Meta::get(Themosis\Facades\Loop::id(), 'images') as $image)
+            @unless(empty(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'images') ))
+                @foreach(\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'images') as $image)
                     <?php
                     $attachment = get_post($image);
                     ?>
@@ -133,10 +133,10 @@
                 @endforeach
             @endunless
         </div>
-        @unless(empty(Themosis\Facades\Loop::terms('gallery-tag') ))
+        @unless(empty(\Themosis\Facades\Loop::terms('gallery-tag') ))
             <div class="row">
                 <div class="right">
-                    @foreach(Themosis\Facades\Loop::terms('gallery-tag') as $tag)
+                    @foreach(\Themosis\Facades\Loop::terms('gallery-tag') as $tag)
                         <div class="chip">
                             <a href="{{ get_term_link($tag) }}" title="{{ $tag->name }}" class="uppercase">
                                 {{ $tag->name }}

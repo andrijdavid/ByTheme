@@ -1,5 +1,5 @@
 <div class="col l12 m12 s12">
-{{ Themosis\Facades\Form::open(home_url('/'), 'GET', false, []) }}
+{{\Themosis\Facades\Form::open(home_url('/'), 'GET', false, []) }}
     <div class="row">
         <div class="input-field col s12">
             <i class="material-icons large prefix">search</i>
@@ -12,5 +12,5 @@
             <?php _e('Search', THEME_TEXT_DOMAIN) ?>
         </button>
     </div>
-{{ Themosis\Facades\Form::close() }}
+{{\Themosis\Facades\Form::close() }}
 </div>

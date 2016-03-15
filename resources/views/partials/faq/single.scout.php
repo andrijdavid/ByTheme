@@ -6,16 +6,16 @@
             @loop
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        {{ Themosis\Facades\Loop::title() }}
+                        {{\Themosis\Facades\Loop::title() }}
                     </div>
                     <div class="panel-body">
-                        {{ Themosis\MetaBox\Meta::get(Themosis\Facades\Loop::id(), 'answer') }}
+                        {{\Themosis\MetaBox\Meta::get(\Themosis\Facades\Loop::id(), 'answer') }}
                     </div>
                     <div class="panel-footer social-share-here">
                         <div class="">
                             @include('partials.social.horizontal', [
-                            'url' => Themosis\Facades\Loop::link(),
-                            'title' => Themosis\Facades\Loop::title()
+                            'url' =>\Themosis\Facades\Loop::link(),
+                            'title' =>\Themosis\Facades\Loop::title()
                         ])
                         </div>
                     </div>

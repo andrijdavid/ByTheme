@@ -1,4 +1,4 @@
-{{ Themosis\Facades\Form::open(home_url('/'), 'GET', false, [
+{{\Themosis\Facades\Form::open(home_url('/'), 'GET', false, [
 'class'=>'navbar-form navbar-left form-inline',
 'role' => 'search'
 ])}}
@@ -11,4 +11,4 @@
     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 </button>
     </div>
-{{ Themosis\Facades\Form::close()}}
+{{\Themosis\Facades\Form::close()}}
