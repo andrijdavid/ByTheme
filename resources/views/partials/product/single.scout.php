@@ -3,7 +3,7 @@
 @endloop
 
 @section('content')
-    <div class="container-fluid full-height">
+    <div class="container-fluid full-height no-padding-on-mobile">
         @loop
         <div id="slider" class="carousel slide sliders" data-ride="carousel" data-interval="3000" data-pause="click">
             <div class="carousel-inner" role="listbox">

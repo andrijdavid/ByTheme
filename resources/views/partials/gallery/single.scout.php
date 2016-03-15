@@ -3,11 +3,11 @@
 @endloop
 
 @section("header")
-<div class="no-padding no-margin full-width singlepost-header">
+<div class="no-padding full-width singlepost-header">
     <img src="{{\Themosis\Facades\Loop::thumbnailUrl('singlePostThumbnail')}}" alt="{{\Themosis\Facades\Loop::title() }}"
-         class="img-responsive transparent-overlay">
+         class="img-responsive transparent-overlay mt-55">
 
-    <header class="animated fadeInUpBig center text-center gallery-caption">
+    <header class="animated fadeInUpBig center text-center gallery-caption hidden-xs hidden-sm">
         <h1 class="">
             <strong class="uppercase">
                 {{\Themosis\Facades\Loop::title() }}
@@ -97,6 +97,33 @@
         </div>
     </div>
     @loop
+    <header class="animated fadeInUpBig center text-center hidden-md hidden-lg">
+        <h1 class="">
+            <strong class="uppercase">
+                {{\Themosis\Facades\Loop::title() }}
+            </strong>
+        </h1>
+
+        <div class="">
+            <!--  <a href="{{\Themosis\Facades\Loop::link() }}" rel="bookmark" style="color:inherit"> -->
+            <a href="{{ get_day_link(\Themosis\Facades\Loop::date('Y'),\Themosis\Facades\Loop::date('n') ,Themosis\Facades\Loop::date('j')) }}">
+                <time class="" datetime="{{\Themosis\Facades\Loop::date() }}">
+                    {{\Themosis\Facades\Loop::date() }}
+                </time>
+            </a>
+            <span>
+                @unless(empty(\Themosis\Facades\Loop::terms("gallery-category")))
+                    @foreach(\Themosis\Facades\Loop::terms("gallery-category") as $category)
+                        <span>/</span>
+                        <a href="{{ get_term_link($category) }}" title="{{ $category->name }}" class="uppercase">
+                            {{ $category->name }}
+                        </a>
+                    @endforeach
+                @endunless
+            </span>
+
+        </div>
+    </header>
     <div class="container gal-wrapper">
 
         <div class="my-gallery gal" itemscope itemtype="http://schema.org/ImageGallery">

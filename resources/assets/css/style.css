@@ -15781,8 +15781,11 @@ a.mdc-text-black-darker:focus {
   padding-right: 5px;
   margin-right: 5px; }
 
+#navbar {
+  margin-bottom: 10px; }
+
 main {
-  padding-top: 56.4px; }
+  padding-top: 56.4px !important; }
 
 /* Widget Styling
 ------------------------------------------------------------ */
@@ -16862,7 +16865,7 @@ figure {
   position: relative;
   top: -300px;
   background-color: #FAFAFA;
-  width: 1000px;
+  width: 80%;
   height: auto;
   padding: 30px 15px !important;
   margin: auto; }
@@ -16953,3 +16956,15 @@ hr {
 
 .faq-category-list li {
   list-style: none; }
+
+@media (min-width: 768px) {
+  .no-padding-on-mobile {
+    padding: 0 !important; } }
+
+@media (min-width: 992px) {
+  .no-padding-on-mobile {
+    width: inherit; } }
+
+@media (min-width: 1200px) {
+  .no-padding-on-mobile {
+    width: inherit; } }

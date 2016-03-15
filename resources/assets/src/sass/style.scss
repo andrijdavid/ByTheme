@@ -35,4 +35,16 @@
 @import "style/menu";
 @import "style/faq";
 
+.no-padding-on-mobile {
+
+  @media (min-width: $screen-sm-min) {
+    padding: 0 !important;
+  }
+  @media (min-width: $screen-md-min) {
+    padding: inherit;
+  }
+  @media (min-width: $screen-lg-min) {
+    padding: inherit;
+  }
+}
 

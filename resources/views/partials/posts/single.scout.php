@@ -17,7 +17,7 @@
 @stop
 
 @section('content')
-<div class="container fit bg-white">
+<div class="container fit bg-white no-padding-on-mobile">
     <article itemscope itemtype="http://schema.org/NewsArticle" {{\Themosis\Facades\Loop::postClass(
     'post-unique p-20') }} />
 

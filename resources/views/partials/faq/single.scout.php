@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-50">
+    <div class="container pt-50 mt-20">
         <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
             @loop
                 <div class="panel panel-default">
@@ -12,7 +12,7 @@
                         {{\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'answer') }}
                     </div>
                     <div class="panel-footer social-share-here">
-                        <div class="">
+                        <div class="scrollable">
                             @include('partials.social.horizontal', [
                             'url' =>\Themosis\Facades\Loop::link(),
                             'title' =>\Themosis\Facades\Loop::title()
@@ -30,9 +30,9 @@
                         <ul class="faq-category-list list-group no-margin-bottom">
 
                             @foreach(get_terms('faq-category', array(
-                            'orderby'    => 'count',
-                            'order' => 'DESC',
-                            'hide_empty' => true
+                                'orderby'    => 'count',
+                                'order' => 'DESC',
+                                'hide_empty' => true
                             )) as $term)
 
                                 <li class="list-group-item no-border-radius">

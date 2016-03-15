@@ -1,16 +1,16 @@
 {{-- Mahintsy --}}
-<div class="row mt-20">
-    <div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-        <div class="media">
-            <div class="media-left media-middle">
+<div class="row m-5">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+        <div class="row m-5">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                 <a href="{{  $link }}">
                     <img src="{{  $thumbnail }}" alt="{{  $title }}"
-                         class="media-object"
+                         class="media-object img-responsive"
                          width="244px" height="300px">
                 </a>
             </div>
-            <div class="media-body">
-                <h2 class="media-heading">
+            <div class="col-sm-12 col-xs-12  col-lg-8 col-md-8">
+                <h2 class="">
                     <a href="{{  $link }}">{{ $title }}</a>
                 </h2>
                 <p class="text-justified">
@@ -26,23 +26,9 @@
                     @endforeach
                     @endunless
                 </p>
-
                 <p class="text-justify">
                     {{ $excerpt }}
                 </p>
-                {{--
-                <p class="text-center">
-                    @unless(empty($tags)))
-                <ul>
-                    @foreach($tags as $tag)
-                    <li>
-                        <a href="{{ get_term_link($tag)}}" rel="tag">{{ $tag->name }}</a>
-                    </li>
-                    @endforeach
-                </ul>
-                @endunless
-                </p>
-                --}}
             </div>
         </div>
     </div>

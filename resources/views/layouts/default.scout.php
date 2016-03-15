@@ -42,7 +42,7 @@
         @include('partials.header.header')
     </header>
 
-    <main class="container-fluid clearfix no-padding">
+    <main class="container-fluid clearfix no-padding-left no-padding-right">
         {{--<div class="container-fluid clearfix no-padding">--}}
             @yield('header')
             @yield('content')
