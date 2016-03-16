@@ -52,10 +52,11 @@
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 no-margin">
                     <hr>
                 </div>
             </div>
+            <br>
             @include('partials.social.horizontal', [
             'title' =>\Themosis\Facades\Loop::title(),
             'url' =>\Themosis\Facades\Loop::link(),
@@ -65,9 +66,17 @@
 
         <div class="container-fluid">
             @unless(empty(\Themosis\Facades\Loop::category()))
-            @include('partials.category', [
-            'categories' =>\Themosis\Facades\Loop::category()
-            ])
+                @include('partials.category', [
+                'categories' =>\Themosis\Facades\Loop::category()
+                ])
+            @endunless
+        </div>
+
+        <div class="container-fluid">
+            @unless(empty(\Themosis\Facades\Loop::tags()))
+                @include('partials.tag', [
+                'tags' =>\Themosis\Facades\Loop::tags()
+                ])
             @endunless
         </div>
 

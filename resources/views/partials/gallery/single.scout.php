@@ -3,24 +3,25 @@
 @endloop
 
 @section("header")
-<div class="no-padding full-width singlepost-header">
-    <img src="{{\Themosis\Facades\Loop::thumbnailUrl('singlePostThumbnail')}}" alt="{{\Themosis\Facades\Loop::title() }}"
-         class="img-responsive transparent-overlay mt-55">
+    <div class="no-padding full-width singlepost-header">
+        <img src="{{\Themosis\Facades\Loop::thumbnailUrl('singlePostThumbnail')}}"
+             alt="{{\Themosis\Facades\Loop::title() }}"
+             class="img-responsive transparent-overlay mt-20">
 
-    <header class="animated fadeInUpBig center text-center gallery-caption hidden-xs hidden-sm">
-        <h1 class="">
-            <strong class="uppercase">
-                {{\Themosis\Facades\Loop::title() }}
-            </strong>
-        </h1>
+        <header class="animated fadeInUpBig center text-center gallery-caption hidden-xs hidden-sm">
+            <h1 class="">
+                <strong class="uppercase">
+                    {{\Themosis\Facades\Loop::title() }}
+                </strong>
+            </h1>
 
-        <div class="">
-            <!--  <a href="{{\Themosis\Facades\Loop::link() }}" rel="bookmark" style="color:inherit"> -->
-            <a href="{{ get_day_link(\Themosis\Facades\Loop::date('Y'),\Themosis\Facades\Loop::date('n') ,Themosis\Facades\Loop::date('j')) }}">
-                <time class="" datetime="{{\Themosis\Facades\Loop::date() }}">
-                    {{\Themosis\Facades\Loop::date() }}
-                </time>
-            </a>
+            <div class="">
+                <!--  <a href="{{\Themosis\Facades\Loop::link() }}" rel="bookmark" style="color:inherit"> -->
+                <a href="{{ get_day_link(\Themosis\Facades\Loop::date('Y'),\Themosis\Facades\Loop::date('n') ,Themosis\Facades\Loop::date('j')) }}">
+                    <time class="" datetime="{{\Themosis\Facades\Loop::date() }}">
+                        {{\Themosis\Facades\Loop::date() }}
+                    </time>
+                </a>
             <span>
                 @unless(empty(\Themosis\Facades\Loop::terms("gallery-category")))
                     @foreach(\Themosis\Facades\Loop::terms("gallery-category") as $category)
@@ -32,9 +33,9 @@
                 @endunless
             </span>
 
-        </div>
-    </header>
-</div>
+            </div>
+        </header>
+    </div>
 @stop
 
 @section('content')
@@ -140,7 +141,8 @@
                            data-size="{{ wp_get_attachment_metadata($image)['width']}}x{{ wp_get_attachment_metadata($image)['height'] }}">
 
                             <img class="img responsive-img transparent-overlay"
-                                 src="{{ wp_get_attachment_image_src($image, 'galleryThumbnail')[0] }}" itemprop="thumbnail"
+                                 src="{{ wp_get_attachment_image_src($image, 'galleryThumbnail')[0] }}"
+                                 itemprop="thumbnail"
                                  alt="{{ get_post_meta( $image, '_wp_attachment_image_alt', true ) }}"
                                  title="{{ $attachment->post_title }}" data-title="{{ $attachment->post_title }}"
                                  data-caption="{{ $attachment->post_excerpt }}"/>
@@ -162,15 +164,9 @@
         </div>
         @unless(empty(\Themosis\Facades\Loop::terms('gallery-tag') ))
             <div class="row">
-                <div class="right">
-                    @foreach(\Themosis\Facades\Loop::terms('gallery-tag') as $tag)
-                        <div class="chip">
-                            <a href="{{ get_term_link($tag) }}" title="{{ $tag->name }}" class="uppercase">
-                                {{ $tag->name }}
-                            </a>
-                        </div>
-                    @endforeach
-                </div>
+                @include('partials.tag', [
+                    'tags' =>\Themosis\Facades\Loop::terms('gallery-tag')
+                ])
             </div>
         @endunless
     </div>
