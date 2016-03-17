@@ -89,7 +89,7 @@ $settings = [
         \Themosis\Facades\Field::number('body-font-size', [
             'title' => __('Font size', THEME_TEXT_DOMAIN),
             'info' => '',
-            'default' => '14px'
+            'default' => '14'
         ]),
 
     ],

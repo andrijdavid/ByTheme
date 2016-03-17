@@ -21,6 +21,9 @@
         @if(!have_posts())
             @include('partials.empty.default')
         @endif
+
+    </div>
+    <div class="container">
         <div class="row">
             <div class="">
                 @include('partials.pagination')

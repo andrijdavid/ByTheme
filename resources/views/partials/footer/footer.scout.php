@@ -28,7 +28,7 @@
         </div>
     </div>
     <div class="container bottom-footer pt-20 pb-10">
-        <div class="copyright">
+        <div class="copyright pull-left">
             <p class="white-text">
                 Made by <a href="http://xcentrik.online" title="XCentrik">XCentrik</a>
             </p>

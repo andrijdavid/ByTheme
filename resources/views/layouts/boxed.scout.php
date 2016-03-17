@@ -42,7 +42,7 @@
               color: {{\Themosis\Page\Option::get("theme-option-typography", "body-text-color") }}   !important;
             @endunless
                        @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "body-font-size")))
-             font-size: {{\Themosis\Page\Option::get("theme-option-typography", "body-font-size") }}   !important;
+             font-size: {{\Themosis\Page\Option::get("theme-option-typography", "body-font-size") }}px  !important;
         @endunless
 
         }
