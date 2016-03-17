@@ -125,7 +125,7 @@
     </div>
     @loop
 
-    <div class="gal-wrapper">
+    <div {{ \Themosis\Facades\Loop::postClass("gal-wrapper") }}>
 
         <div class="my-gallery gal" itemscope itemtype="http://schema.org/ImageGallery">
             @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'images') ))

@@ -33,7 +33,7 @@
                 <span class="sr-only"><?php _e('Next', THEME_TEXT_DOMAIN) ?></span>
             </a>
         </div>
-        <article class="{{\Themosis\Facades\Loop::postClass() }}">
+        <article {{\Themosis\Facades\Loop::postClass() }}>
             <div class="row carousel-caption hidden-xs hidden-sm silde-description">
                 <div class="text-float col-sm-9 col-md-6 col-md-offset-6">
                     <h3>

@@ -8,7 +8,7 @@
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 @loop
                     @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'answer')))
-                        <div class="panel panel-default mb-5">
+                        <div {{ \Themosis\Facades\Loop::postClass("panel panel-default mb-5") }}>
                             <div class="panel-heading" id="heading-{{Themosis\Facades\Loop::id()}}">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{\Themosis\Facades\Loop::id() }}">
