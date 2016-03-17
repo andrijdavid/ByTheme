@@ -61,12 +61,12 @@ $settings = [
             'info' => '',
             'default' => '#5D5D5D'
         ]),
-        \Themosis\Facades\Field::color('text-color', [
+        \Themosis\Facades\Field::color('body-text-color', [
             'title' => __('Text color', THEME_TEXT_DOMAIN),
             'info' => '',
             'default' => '#ccc'
         ]),
-        \Themosis\Facades\Field::color('background-color', [
+        \Themosis\Facades\Field::color('body-background-color', [
             'title' => __('Background color', THEME_TEXT_DOMAIN),
             'info' => '',
             'default' => '#666'
@@ -86,12 +86,17 @@ $settings = [
             'info' => '',
             'default' => '#1c3942'
         ]),
+        \Themosis\Facades\Field::number('body-font-size', [
+            'title' => __('Font size', THEME_TEXT_DOMAIN),
+            'info' => '',
+            'default' => '14px'
+        ]),
 
     ],
     'theme-option-social' => [
         Field::text('facebook', ['title' => 'Facebook'], ['type' => 'url']),
         Field::text('twitter', ['title' => 'Twitter'], ['type' => 'url']),
-        Field::text('google-plus', ['title' => 'Google plus'], ['type' => 'url']),
+        Field::text('google-plus', ['title' => 'Google+'], ['type' => 'url']),
         Field::text('linkedin', ['title' => 'linkedIn'], ['type' => 'url']),
         Field::text('youtube', ['title' => 'YouTube'], ['type' => 'url']),
         Field::text('vkontakte', ['title' => 'Vkontakte'], ['type' => 'url']),
