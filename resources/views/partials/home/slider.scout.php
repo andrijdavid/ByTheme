@@ -5,7 +5,7 @@
             <div class="item <?php if($key == 0) {?> active <?php } ?>">
                 @if(empty($item->thumbnailUrl('homeSlider')))
                     <img src="{{\Themosis\Page\Option::get("theme-option-theme", "defaultSlider") }}"
-                         alt="{{ $item->title() }}">
+                         alt="{{ $item->title() }}" class="img-responsive">
                 @else
                     <img src="{{  $item->thumbnailUrl('homeSlider') }}" alt="{{ $item->title() }}"
                          class="img-responsive">

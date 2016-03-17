@@ -1,4 +1,4 @@
-<div class="site-footer">
+<div class="site-footer footer-color">
     <div class="container">
         <div class="row pt-20">
             <div class="col col-lg-10 col-md-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-10">

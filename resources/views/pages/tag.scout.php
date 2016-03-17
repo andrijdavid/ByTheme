@@ -1,8 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="container pt-50">
-    <div class="container mt-50 mb-50">
+<div class="container pt-20">
         @loop
         @include('partials.unique.unique2',[
             'title' =>\Themosis\Facades\Loop::title(),
@@ -18,7 +17,6 @@
 
         ])
         @endloop
-    </div>
 </div>
 @stop
 

@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="container pt-50">
+<div class="container pt-20">
     @loop
     <div class="category-large-title-area category-3-bb">
         <div class="category-large-title-container">

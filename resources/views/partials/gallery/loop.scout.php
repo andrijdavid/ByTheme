@@ -1,7 +1,8 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-60 mt-20 pb-40">
+    {{--<div class="container pt-60 mt-20 pb-40">--}}
+    <div class="container-fluid pt-20">
         @loop
             @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'images')))
                 @include(empty(\Themosis\Page\Option::get('theme-option-layout', 'galleryLoopType')) ? 'partials.unique.unique1' :\Themosis\Page\Option::get('theme-option-layout', 'galleryLoopType'), [

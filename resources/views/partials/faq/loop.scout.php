@@ -1,12 +1,14 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-60 mt-60 pb-40 no-padding-on-mobile">
-        <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12 mt-5">
+
+    {{--<div class="pt-60 mt-60 pb-40 no-padding-on-mobile">--}}
+    <div class="container-fluid pt-20">
+        <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                 @loop
                     @unless(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'answer')))
-                        <div class="panel panel-default">
+                        <div class="panel panel-default mb-5">
                             <div class="panel-heading" id="heading-{{Themosis\Facades\Loop::id()}}">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{\Themosis\Facades\Loop::id() }}">
@@ -24,15 +26,15 @@
                                         {{\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'answer') }}
                                     </div>
                                 </div>
-                                <div class="panel-footer">
-                                </div>
+                                {{--<div class="panel-footer">--}}
+                                {{--</div>--}}
                             </div>
                         </div>
                     @endunless
                 @endloop
             </div>
         </div>
-        <div class="col md-4 col-lg-4 col-xs-12 col-sm-12 mt-5">
+        <div class="col md-4 col-lg-4 col-xs-12 col-sm-12">
             <div class="panel panel-default faq-panel">
                 <div class="panel-heading"><?php _e('Faqs Categories', THEME_TEXT_DOMAIN)?></div>
                 <div class="panel-body no-padding">

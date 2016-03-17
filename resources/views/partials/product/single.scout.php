@@ -1,9 +1,8 @@
-@loop
-@extends(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.default' :\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
-@endloop
+@extends('layouts.default')
+
 
 @section('content')
-    <div class="container-fluid full-height no-padding-on-mobile">
+    {{--<div class="container-fluid full-height no-padding-on-mobile">--}}
         @loop
         <div id="slider" class="carousel slide sliders" data-ride="carousel" data-interval="3000" data-pause="click">
             <div class="carousel-inner" role="listbox">
@@ -17,7 +16,7 @@
                             @else
                                 <img src="{{  wp_get_attachment_image_src($image, 'productSingleSlider')[0] }}"
                                      alt="{{\Themosis\Facades\Loop::title() }}"
-                                     class="img-responsive">
+                                     class="img-responsive opacity-80">
                             @endif
                         </div>
                     @endforeach
@@ -83,7 +82,7 @@
             </div>
         </article>
         @endloop
-    </div>
+    {{--</div>--}}
 @stop
 
 @section('sidebar')

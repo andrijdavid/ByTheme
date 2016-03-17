@@ -1,5 +1,5 @@
 @loop
-@extends(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.rightsidebar' :\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
+    @extends(empty(\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout')) ? 'layouts.rightsidebar' :\Themosis\Metabox\Meta::get(\Themosis\Facades\Loop::id(), 'layout'))
 @endloop
 
 @section('sidebar')
@@ -17,7 +17,7 @@
 @stop
 
 @section('content')
-<div class="container fit bg-white no-padding-on-mobile">
+{{--<div class="containerfit bg-white no-padding-on-mobile">--}}
     <article itemscope itemtype="http://schema.org/NewsArticle" {{\Themosis\Facades\Loop::postClass(
     'post-unique p-20') }} />
 
@@ -121,7 +121,7 @@
     @include('partials.back-to-top')
 </div>
 </article>
-</div>
+{{--</div>--}}
 
 @loop
 

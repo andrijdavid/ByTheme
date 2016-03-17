@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="container pt-50">
+<div class="container pt-20">
 
 </div>
 @stop

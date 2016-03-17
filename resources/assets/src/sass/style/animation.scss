@@ -1,6 +1,6 @@
 .nav {
   li.active{
-      border-bottom: 2px solid #fffde3;
+      border-bottom: 3px solid #fffde3;
       a {
         background-color: transparent !important;
       }
@@ -8,14 +8,19 @@
 
   .menu-item{
     &:hover{
-      //transform: scale(1.04);
       a {
-        font-size: 1em;
+        color: white !important;
+        font-weight: bold;
 
-        &:hover {
+      }
+    }
+    a{
+      //transform: scale(1.04);
+      &:hover {
           font-weight: bold;
           transform: scale(1.04);
-        }
+          color: white !important;
+          //text-decoration: underline;
       }
     }
 
@@ -28,6 +33,6 @@
 }
 
 :focus {
-  color: #333;
+  color: #ccc;
   outline: #ccc solid 1px;
 }

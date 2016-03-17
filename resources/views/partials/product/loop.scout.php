@@ -1,9 +1,9 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-60 mt-60 pb-40 no-padding-on-mobile">
+    <div class="container-fluid pt-20">
         @loop
-        @include(empty(\Themosis\Page\Option::get('theme-option-layout', 'productLoopType')) ? 'partials.unique.unique1' :\Themosis\Page\Option::get('theme-option-layout', 'productLoopType'), [
+        @include(empty(\Themosis\Page\Option::get('theme-option-layout', 'productLoopType')) ? 'partials.unique.unique2' :\Themosis\Page\Option::get('theme-option-layout', 'productLoopType'), [
 
         'title' =>\Themosis\Facades\Loop::title(),
         'link' =>\Themosis\Facades\Loop::link(),

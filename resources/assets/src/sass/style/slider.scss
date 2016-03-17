@@ -28,7 +28,10 @@
     a {
        &:hover{
          transform: scale(1.04);
+         border-bottom: 1px #000;
+
        }
+      color: inherit;
     }
   }
   p {

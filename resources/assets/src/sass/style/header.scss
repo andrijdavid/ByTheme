@@ -1,13 +1,13 @@
 .top-header{
   height: 30px;
-  position: fixed;
+  //position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   min-height: 30px;
   font-size: 11px;
-  padding-top: 10px;
-  padding-right: 115px;
+  //padding-top: 10px;
+  //padding-right: 115px;
 
   a{
     color: #fff;
@@ -22,9 +22,9 @@
   margin-top: 30px;
 }
 
-.cands{
-  background-color: #1c3942;
-}
+//.cands{
+//  background-color: #1c3942;
+//}
 
 .navbar-inverse {
   border: none;
@@ -46,4 +46,8 @@
 }
 #navbar {
   margin-bottom: 10px;
+}
+.navbar {
+  border-radius: 0 !important;
+  border: none !important;
 }

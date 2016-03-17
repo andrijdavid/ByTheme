@@ -15726,15 +15726,17 @@ a.mdc-text-black-darker:focus {
 .home-slider-caption h3 {
   font-size: 2em !important;
   font-weight: inherit; }
-  .home-slider-caption h3 a:hover {
-    transform: scale(1.04); }
+  .home-slider-caption h3 a {
+    color: inherit; }
+    .home-slider-caption h3 a:hover {
+      transform: scale(1.04);
+      border-bottom: 1px #000; }
 
 .home-slider-caption p {
   font-size: 1em !important;
   font-weight: inherit; }
 
 .footer .site-footer {
-  background: #1c3942;
   bottom: 0;
   width: 100%; }
 
@@ -15748,14 +15750,11 @@ a.mdc-text-black-darker:focus {
 
 .top-header {
   height: 30px;
-  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   min-height: 30px;
-  font-size: 11px;
-  padding-top: 10px;
-  padding-right: 115px; }
+  font-size: 11px; }
   .top-header a {
     color: #fff;
     font-weight: bold; }
@@ -15764,9 +15763,6 @@ a.mdc-text-black-darker:focus {
   height: 70px;
   right: 20px;
   margin-top: 30px; }
-
-.cands {
-  background-color: #1c3942; }
 
 .navbar-inverse {
   border: none; }
@@ -15784,8 +15780,9 @@ a.mdc-text-black-darker:focus {
 #navbar {
   margin-bottom: 10px; }
 
-main {
-  padding-top: 56.4px !important; }
+.navbar {
+  border-radius: 0 !important;
+  border: none !important; }
 
 /* Widget Styling
 ------------------------------------------------------------ */
@@ -15888,16 +15885,12 @@ main {
 
 /* # Sidebars
 ---------------------------------------------------------------------------------------------------- */
-.sidebar {
-  font-size: 16px;
-  font-size: 1.6rem; }
-  .sidebar .widget {
-    background-color: #eeeeee !important; }
-    .sidebar .widget .widget-wrap .widgettitle {
-      color: #777; }
-    .sidebar .widget .widget-wrap a {
-      color: #196D61;
-      font-weight: bold; }
+.sidebar .widget {
+  background-color: #eeeeee !important; }
+  .sidebar .widget .widget-wrap .widgettitle {
+    color: #777; }
+  .sidebar .widget .widget-wrap a {
+    color: #196D61; }
 
 .sidebar li {
   border-bottom: 1px dotted #ddd;
@@ -15916,25 +15909,23 @@ main {
 .site-footer .widget .widget-wrap .widgettitle {
   color: #777; }
 
+.site-footer .widget .widget-wrap h2 {
+  font-size: inherit !important; }
+
 .site-footer .widget .widget-wrap a {
-  color: #196D61;
-  font-weight: bold; }
+  color: #196D61; }
 
 .site-footer .widget .widget-wrap td {
-  color: #fff;
-  font-weight: bold; }
+  color: #fff; }
 
 .site-footer .widget .widget-wrap th {
-  color: #757777;
-  font-weight: bold; }
+  color: #757777; }
 
 .site-footer .widget .widget-wrap h3 {
-  color: #757777;
-  font-weight: bold; }
+  color: #757777; }
 
 .site-footer .widget .widget-wrap ul li a {
-  color: #fff;
-  font-weight: bold; }
+  color: #fff; }
 
 /*.thumbnail{
   .image{
@@ -15942,22 +15933,25 @@ main {
   }
 }*/
 .nav li.active {
-  border-bottom: 2px solid #fffde3; }
+  border-bottom: 3px solid #fffde3; }
   .nav li.active a {
     background-color: transparent !important; }
 
 .nav .menu-item:hover a {
-  font-size: 1em; }
-  .nav .menu-item:hover a:hover {
-    font-weight: bold;
-    transform: scale(1.04); }
+  color: white !important;
+  font-weight: bold; }
+
+.nav .menu-item a:hover {
+  font-weight: bold;
+  transform: scale(1.04);
+  color: white !important; }
 
 .img:hover {
   opacity: 0.8;
   transition: opacity 0.5s; }
 
 :focus {
-  color: #333;
+  color: #ccc;
   outline: #ccc solid 1px; }
 
 .social-share-zigzag .social {
@@ -16472,11 +16466,6 @@ td {
 th {
   font-weight: 400; }
 
-/* fix styles for layered navigation menus */
-.nav-primary + .nav-secondary {
-  margin-top: -20px;
-  z-index: 999; }
-
 /* Display Bootstrap Nav Secondary Items even when JavaScript is disabled */
 .no-js .menu-item-has-children:hover .dropdown-menu,
 .no-js .menu-item-has-children:focus .dropdown-menu {
@@ -16726,10 +16715,6 @@ img.wp-smiley,
   border-radius: 50% !important;
   margin: 0 5px; }
 
-.main {
-  width: auto;
-  height: auto; }
-
 .gal-img {
   /*
     position: relative;*/
@@ -16857,10 +16842,6 @@ figure {
 .gal-wrapper {
   clear: both; }
 
-.gal {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
 .gallery-caption {
   position: relative;
   top: -300px;
@@ -16883,15 +16864,6 @@ figure {
 .error-desc {
   font-size: 12px;
   color: #647788; }
-
-.m-b-10 {
-  margin-bottom: 10px !important; }
-
-.m-b-20 {
-  margin-bottom: 20px !important; }
-
-.m-t-20 {
-  margin-top: 20px !important; }
 
 hr {
   height: 4px;
@@ -16963,8 +16935,8 @@ hr {
 
 @media (min-width: 992px) {
   .no-padding-on-mobile {
-    width: inherit; } }
+    padding: inherit; } }
 
 @media (min-width: 1200px) {
   .no-padding-on-mobile {
-    width: inherit; } }
+    padding: inherit; } }

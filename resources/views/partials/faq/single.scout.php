@@ -1,7 +1,8 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container pt-50 mt-20">
+    {{--<div class="container pt-50 mt-20">--}}
+    <div class="container-fluid pt-20">
         <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12">
             @loop
                 <div class="panel panel-default">
