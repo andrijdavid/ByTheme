@@ -1,4 +1,4 @@
-<div class="left-panel {{ isset($containerClass) ? $containerClass : '' }}">
+<div class="left-panel  post-item  {{ isset($containerClass) ? $containerClass : '' }}">
             <div class="col-xs-12 col-sm-6 col-lg-4">
                 <div class="panel panel-default">
                     <div class="panel-body">

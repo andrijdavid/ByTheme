@@ -1,5 +1,5 @@
 
-    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 {{ isset($containerClass) ? $containerClass : '' }}">
+    <div class="col-lg-3   post-item  col-md-3 col-sm-12 col-xs-12 {{ isset($containerClass) ? $containerClass : '' }}">
         <div class="thumbnail no-padding">
             <a href="{{  $link }}">
                 <img src="{{  $thumbnail }}" alt="{{ $title }}" class="no-padding no-margin img-responsive fit full-width image">

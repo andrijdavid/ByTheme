@@ -1,6 +1,6 @@
 {{-- Mahintsy --}}
 {{--<div class="row m-5">--}}
-    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 bg-white {{ isset($containerClass) ? $containerClass : '' }}">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 post-item col-lg-offset-2 col-md-offset-2 bg-white {{ isset($containerClass) ? $containerClass : '' }}">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
                 <a href="{{  $link }}">

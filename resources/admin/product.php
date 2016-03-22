@@ -23,18 +23,18 @@ $tag = Taxonomy::make('product-tag', 'products', __('Product Tags', THEME_TEXT_D
 
 
 $products = PostType::make('products', __('Products', THEME_TEXT_DOMAIN), __('Product',THEME_TEXT_DOMAIN))->set([
-    'public'    => true,
+	'public'    => true,
 	'show_in_nav_menus' => true,
 	'show_ui'             => TRUE,
 	'show_in_menu'        => TRUE,
 	'publicly_queryable'  => TRUE,
 	'query_var'           => 'products',
 	'rewrite'             => array ( 'slug' => 'products' ),
-    'labels'       => [
-        'add_item' => __('Add', THEME_TEXT_DOMAIN)
-    ],
+	'labels'       => [
+		'add_item' => __('Add', THEME_TEXT_DOMAIN)
+	],
 
-    'supports'  => array('title', 'excerpt', 'thumbnail', 'revisions'),
+	'supports'  => array('title', 'excerpt', 'thumbnail', 'revisions'),
 	'taxonomies' => array('product-category', 'product-tag')
 ]);
 

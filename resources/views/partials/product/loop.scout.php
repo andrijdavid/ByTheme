@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="container-fluid pt-20">
+    <div class="container-fluid pt-20 post-loop">
         @loop
         @include(empty(\Themosis\Page\Option::get('theme-option-layout', 'productLoopType')) ? 'partials.unique.unique2' :\Themosis\Page\Option::get('theme-option-layout', 'productLoopType'), [
 
@@ -26,4 +26,12 @@
     <div class="container">
                 @include('partials.pagination')
     </div>
+    <script>
+        var gal = document.querySelector(".post-loop"), masonry = new Masonry(gal, {
+            percentPosition: !0,
+            itemSelector: ".post-item",
+            isResizeBound: !0
+        });
+        masonry.layout();
+    </script>
 @stop

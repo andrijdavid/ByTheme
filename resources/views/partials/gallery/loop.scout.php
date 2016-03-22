@@ -28,6 +28,6 @@
 
     </div>
     <div class="container">
-                @include('partials.pagination')
+        @include('partials.pagination')
     </div>
 @stop

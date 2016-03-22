@@ -27,11 +27,67 @@
     @endunless
     <link rel="canonical" href="<?php bloginfo('url'); ?>" itemprop="url">
     <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
     @yield('head')
     <?php wp_head(); ?>
+    <style>
+        .body {
+            @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "body-background-color")))
+              background-color: {{\Themosis\Page\Option::get("theme-option-typography", "body-background-color") }}   !important;
+            @endunless
+                       @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "body-text-color")))
+
+              color: {{\Themosis\Page\Option::get("theme-option-typography", "body-text-color") }}   !important;
+            @endunless
+                       @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "body-font-size")))
+             font-size: {{\Themosis\Page\Option::get("theme-option-typography", "body-font-size") }}px  !important;
+        @endunless
+
+        }
+
+
+
+        @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "nav-color")))
+        .nav-color {
+            background-color: {{\Themosis\Page\Option::get("theme-option-typography", "nav-color") }}  !important;
+        }
+
+        @endunless
+
+        @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "footer-color")))
+        .footer-color {
+            background-color: {{\Themosis\Page\Option::get("theme-option-typography", "footer-color") }}  !important;
+        }
+
+        @endunless
+
+        @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "topnav-color")))
+        .topnav {
+            background-color: {{\Themosis\Page\Option::get("theme-option-typography", "topnav-color") }}  !important;
+        }
+
+        @endunless
+
+        @unless(empty(\Themosis\Page\Option::get("theme-option-typography", "menu-item-color")))
+        .menu-item > a {
+            color: {{\Themosis\Page\Option::get("theme-option-typography", "menu-item-color") }}  !important;
+        }
+
+        @endunless
+
+        @if(\Themosis\Page\Option::get('theme-option-layout', 'fixed-nav'))
+            .main {
+            padding-top: 56.4px !important;
+        }
+
+        @else
+            .main {
+            padding-top: 20px !important;
+        }
+        @endif
+    </style>
     <style>
         {{\Themosis\Page\Option::get("theme-option-custom-code", "style") }}
     </style>
